@@ -1,24 +1,24 @@
-<ion-view view-title="category">
-<div class="alert alert-success-sm">
-    <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-    <label for="email">
-        <h3>Please Enter Your Registered mobile Number</h3></label>
-    <input type="text" class="form-control" id="email" placeholder="Enter Registered Mobile Number">
-    <br>
-    <center>
-    <button type="button" class="btn-default btn-round">Login</button>
-  </center>
-    <input type="button" value="skip" class="close" data-dismiss="alert" arial-label="close">
-</div>
+<ion-view class="category">
+  <ion-content>
+    <!-- <section class = "home-container">
+      <div class="row icon-row">
+        <div class="row row-center" > -->
+        <div class="container">
   <div carousel3d ng-model="images" options="options">
-      <div carousel3d-slide ng-repeat="x in images">
-          <figure>
-            <a><img ng-if = "carousel3d.getCurrentIndex() === $index" ng-src='{{(x.src)}}'  ui-sref='content({pid:x.pid,cid:x.cid})' alt=""/>
+    <div class="img-responsive" carousel3d-slide ng-repeat="x in images">
+      <figure>
 
-               <img ng-if = "carousel3d.getCurrentIndex() !== $index" ng-src="{{x.src}}"/>
-               <figcaption><span style="color:white;font-weight:bold">{{x.caption}}</span></figcaption>
-  </a>
-          </figure>
-      </div>
+        <img ng-if="carousel3d.getCurrentIndex() === $index" ng-src='{{(x.src)}}'ui-sref='content({pid:x.pid,cid:x.cid})'alt="" />
+          <img ng-if="carousel3d.getCurrentIndex() !== $index" ng-src="{{x.src}}" />
+            </a>
+          <figcaption><span style="color:white;font-weight:bold">{{x.caption}}</span></figcaption>
+
+      </figure>
+    </div>
   </div>
+</div>
+</ion-content>
+<!-- </div>
+</div>
+</section> -->
 </ion-view>

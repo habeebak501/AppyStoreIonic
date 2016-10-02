@@ -1,26 +1,6 @@
 angular.module('starter.controllers', [])
-
-// .controller('DashCtrl', function($scope) {})
-//
-// .controller('ChatsCtrl', function($scope, Chats) {
-//   // With the new view caching in Ionic, Controllers are only called
-//   // when they are recreated or on app start, instead of every page change.
-//   // To listen for when this page is active (for example, to refresh data),
-//   // listen for the $ionicView.enter event:
-//   //
-//   //$scope.$on('$ionicView.enter', function(e) {
-//   //});
-//
-//   $scope.chats = Chats.all();
-//   $scope.remove = function(chat) {
-//     Chats.remove(chat);
-//   };
-// })
-
-// .controller('ChatDetailCtrl', function($scope, $stateParams, Chats) {
-//   $scope.chat = Chats.get($stateParams.chatId);
-// })
-.controller('categoryCtrl',function($scope,categoryService){
+.controller('categoryCtrl',function($scope,CategoryService){
+  console.log("categorycontroller");
   var array = [];
         $scope.images = [{
             'src': "loading.gif",
@@ -34,14 +14,14 @@ angular.module('starter.controllers', [])
             startSlide: 0,
             border: 3,
             dir: 'rtl',
-            width: 420,
-            height: 260,
+            width: 260,
+            height: 180,
             top: 200,
             space: 220,
-            autoRotationSpeed: 5000,
+            autoRotationSpeed: 10000,
             loop: true
         };
-        var promise = categoryService.result();
+        var promise = CategoryService.result();
         promise.then(function(data) {
             $scope.images = [];
             var result = data.data.Responsedetails.category_id_array;
@@ -55,4 +35,42 @@ angular.module('starter.controllers', [])
             }
             console.log(result);
         });
+    })
+    .controller("contentCtrl", function($scope, $stateParams, $http,CategoryService) {
+        //  $scope.load=true;
+        console.log('contentController');
+        var pcatid = $stateParams.pid;
+        var catid = $stateParams.cid;
+        $scope.pcatid = pcatid;
+        $scope.catid = catid;
+        console.log(pcatid, catid);
+        var url = $stateParams.url;
+        var url = 'http://beta.appystore.in/appy_app/appyApi_handler.php?method=getContentList&content_type=videos&limit=133&offset=0&catid=' + catid + '&pcatid=' + pcatid + '&age=1.5&incl_age=5';
+        $scope.url = url;
+        console.log(url);
+        $http.get(url, {
+                headers: {
+                    'Access-Control-Allow-Origin': 'true',
+                    'Access-Control-Allow-Methods': 'PUT, GET, POST',
+                    'Access-Control-Allow-Headers': 'Origin, X-Requested-With, Content-Type, Accept',
+                    'X_APPY_USERID': '290903782',
+                    'X_APPY_API_KEY': 'gh610rt23eqwpll',
+                    'X_APPY_USERID': '290903782',
+                    'X_APPY_IMEI': '353368070301951',
+                    'X_APPY_PCP_ID': '999',
+                    'X_APPY_CAMPAIGN_ID': '8700441600',
+                    'X_APPY_APP_TYPE': 'lite',
+                    'X_APPY_TTR': '10800000',
+                    'X_APPY_UTYPE': 'O',
+                    'X_APPY_MSISDN': '0',
+                    'X_APPY_IS_NEW_USER': 'N',
+                    'X_APPY_UserAgent': 'Mozilla/5.0 (Linux; Android 5.0.2; Panasonic ELUGA Switch Build/LRX22G; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/51.0.2704.81 Mobile Safari/537.36'
+                }
+            })
+            .then(function(response) {
+                // $scope.load=false;
+                $scope.result = response.data.Responsedetails.data_array;
+                console.log($scope.result);
+                // $scope.pagination.numPages = Math.ceil($scope.result.length / $scope.pagination.perPage);
+            });
     });

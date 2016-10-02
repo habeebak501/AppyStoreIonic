@@ -1,0 +1,13 @@
+<ion-view class="content">
+  <div class="img-responsive" ng-repeat="x in result" class="col-sm-4">
+        <div class="thumbnail">
+            <img src='{{x.image_path}}' alt="" poster="3.gif">
+            <p></p>
+                <!-- <a ui-sref='video({url:x.dnld_url,poster:x.image_path,pid:pcatid,cid:catid})'> -->
+                    <h2><span style="color:white;font-weight:bold">{{x.title}}</span></h2>
+                <!-- </a> -->
+            </div>
+        </div>
+    </div>
+</div>
+</ion-view>
