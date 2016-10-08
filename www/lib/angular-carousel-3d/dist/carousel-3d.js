@@ -11,7 +11,7 @@
 
     angular
         .module('angular-carousel-3d', [
-            'swipe' 
+            'swipe'
         ]);
 
 
@@ -72,6 +72,7 @@
         vm.slideClicked = slideClicked;
         vm.goPrev = goPrev;
         vm.goNext = goNext;
+        vm.getCurrentIndex=getCurrentIndex;
 
         var $wrapper = null,
             $slides = [],
@@ -359,6 +360,10 @@
             return (index >= 0) ? angular.element($slides[index]) : angular.element($slides[carousel3d.total + index]);
         }
 
+          //USer defined
+        function getCurrentIndex(){
+          return carousel3d.currentIndex;
+        }
         function slideClicked(index) {
             $interval.cancel(vm.autoRotation);
 

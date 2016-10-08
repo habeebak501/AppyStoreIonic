@@ -1,13 +1,20 @@
 <ion-view class="content">
-  <div class="img-responsive" ng-repeat="x in result" class="col-sm-4">
-        <div class="thumbnail">
-            <img src='{{x.image_path}}' alt="" poster="3.gif">
-            <p></p>
-                <!-- <a ui-sref='video({url:x.dnld_url,poster:x.image_path,pid:pcatid,cid:catid})'> -->
-                    <h2><span style="color:white;font-weight:bold">{{x.title}}</span></h2>
-                <!-- </a> -->
-            </div>
-        </div>
-    </div>
+  <!-- <div class = "container1"> -->
+    <div class="outerbox">
+      <div class="row">
+        <center>
+            <div class="span5" style="display: inline-block " ng-repeat="x in result" class='img-responsive'>
+
+               <div class="card card-1">
+                 <a>
+                 <img class="img" style='border-radius: 10%;' ng-src='{{x.image_path}}' width="250"height="150" ui-sref='video({url:x.dnld_url,poster:x.image_path,pid:pcatid,cid:catid,content_count:content_count})'/>
+                 <span class="icon videoIcon playS"></span>
+                    <p class="p1">{{x.title}}</p>
+                </a>
+             <br>
+         </div>
+     </div>
+ </center>
 </div>
+  </div>
 </ion-view>

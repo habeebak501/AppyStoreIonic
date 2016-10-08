@@ -28,9 +28,14 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services','a
   controller : 'categoryCtrl'
   })
   .state('content',{
-    url:'/content/?pid?cid',
+    url:'/content/?pid?cid?content_count',
     templateUrl:'templates/content.html',
     controller:'contentCtrl'
+  })
+  .state('video',{
+    url:'/video/?pid?cid?content_count',
+    templateUrl:'tempaltes/video.html',
+    controller:'videoCtrl'
   });
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/category');
