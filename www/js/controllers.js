@@ -1,5 +1,5 @@
 angular.module('starter.controllers', [])
-.controller('categoryCtrl',function($scope,CategoryService){
+.controller('categoryCtrl',function($scope,CategoryService,$ionicHistory){
   console.log("categorycontroller");
   var array = [];
         $scope.images = [{
@@ -44,6 +44,9 @@ angular.module('starter.controllers', [])
             console.log($scope.images);
             console.log(result);
         });
+        $scope.myGoBack = function() {
+    $ionicHistory.goBack();
+  };
     })
     .controller("contentCtrl", function($scope, $stateParams, $http,CategoryService) {
         //  $scope.load=true;
@@ -82,19 +85,20 @@ angular.module('starter.controllers', [])
                 }
             })
             .then(function(response) {
+              console.log(response);
                 // $scope.load=false;
                 $scope.result = response.data.Responsedetails.data_array;
                 console.log($scope.result);
                 //  $scope.pagination.numPages = Math.ceil($scope.result.length / $scope.pagination.perPage);
-            });
+            })
     })
-    .controller("videoCtrl", function($scope, $stateParams, $http, $sce, Pagination,categoryService) {
+    .controller("videoCtrl", function($scope,$stateParams,$http,$sce,CategoryService) {
         // $scope.load=true;
         console.log('videoController');
         $scope.content_count = $stateParams.content_count;
         console.log($scope.content_count);
         var count = $scope.content_count;
-        $scope.pagination = Pagination.getNew(count);
+        // $scope.pagination = Pagination.getNew(count);
         var url = $stateParams.url;
         // var poster = $stateParams.poster;
         var pcatid = $stateParams.pid;
@@ -149,7 +153,7 @@ angular.module('starter.controllers', [])
                 // }
                 //       console.log($scope.arr);
                 $scope.result = response.data.Responsedetails.data_array;
-                $scope.pagination.numPages = Math.ceil($scope.result.length / $scope.pagination.perPage);
+                // $scope.pagination.numPages = Math.ceil($scope.result.length / $scope.pagination.perPage);
                 console.log($scope.result);
 
             });

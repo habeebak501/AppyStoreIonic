@@ -33,8 +33,8 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services','a
     controller:'contentCtrl'
   })
   .state('video',{
-    url:'/video/?pid?cid?content_count',
-    templateUrl:'tempaltes/video.html',
+    url:'/video/?url?pid?cid?content_count',
+    templateUrl:'templates/video.html',
     controller:'videoCtrl'
   });
   // if none of the above states are matched, use this as the fallback

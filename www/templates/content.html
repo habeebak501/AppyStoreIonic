@@ -1,19 +1,26 @@
-<ion-view class="background">  <!-- <div class = "container1"> -->
+<ion-view class="content">
+   <div ng-include="'templates/back.html'"></div>
+   <!-- <ion-content> -->
+     <!-- <img ui-sref="category" class="float_left"  ng-src="Button_14_back-min.png" height="50"width="50"></img>  -->
+   <div class="container2">
     <div class="outerbox">
       <div class="row">
         <center>
             <div class="span5" style="display: inline-block " ng-repeat="x in result" class='img-responsive'>
 
-               <div class="card card-1">
-                 <a>
-                 <img class="img" style='border-radius: 12%' ng-src='{{x.image_path}}' width="250"height="150" ui-sref='video({url:x.dnld_url,poster:x.image_path,pid:pcatid,cid:catid,content_count:content_count})'/>
+            <a ui-sref='video({url:x.dnld_url,pid:pcatid,cid:catid,content_count:content_count})'> <div class="card card-1">
+                 <img class="img" style='border-radius: 12%' ng-src='{{x.image_path}}' width="250"height="150"/>
                  <span class="icon videoIcon playS"></span>
                     <p class="p1">{{x.title}}</p>
                 </a>
              <br>
          </div>
-     </div>
+     <!-- </div> -->
  </center>
 </div>
   </div>
+</div>
+</div>
+<!-- </ion-content> -->
+<!-- </div> -->
 </ion-view>
