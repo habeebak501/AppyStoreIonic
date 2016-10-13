@@ -5,7 +5,36 @@
     background-size: cover;
 
 }
+
+.video2{
+  /*background-color: black;*/
+  background-size: cover;
+
+}
+.video1{
+  top:100px;
+ackground-color: black;
+  position:relative;
+  text-align: cente
+}
+/*.video{
+  width:100%;
+background-color: black;
+  position:relative;
+  text-align: cente
+}
+*/
+
+.container4{
+  top:400px;
+  background-color: black;
+  position:absolute;;
+  width:100%;
+  text-align: center;
+  }
 #myvideo{
+  position:relative;
+  background-color: black;
   width:480px;
   height:270px;
 }
@@ -78,12 +107,13 @@
         /*background-position: 0 -2495px;*/
     }
     .moreIcon{
-      background-image : url('Button_29_play_icon_white-min.png')
+      /*background-image : url('Button_27_play_more-min.png');*/
  height: 48px;
  width: 88px;
  display: inline-block;
  position: absolute;
- left: 0;
+ right:-40px;
+ /*left: 0;*/
  bottom: 0;
 }
 div.outerbox {
@@ -95,6 +125,25 @@ div.outerbox [class*="span"] {
     display: inline-block;
     float: none; /* Very important */
 }
+.icon1 {
+   background-image :url('Button_27_more-min1.png');
+   background-repeat : no-repeat;
+
+ }
+ .img{
+   top:5px;
+   position:relative;
+ }
+ /*.moreIcon1 {
+     top:80px; left:50px;
+     height: 48px;
+     width: 88px;
+     display: inline-block;
+     position: absolute;
+     /*left: 0;*/
+     /*right:0;
+     bottom: 0;
+ }*/
 
 /* Test purposes */
 .outerbox .span5 { margin-top: 5px;min-height: 50px; }
@@ -164,7 +213,48 @@ div.outerbox {
   width:100%;
   text-align: center;
 }
-@media only screen and (max-width: 768px) {
+.container3{
+  top:100px;
+  position:absolute;;
+  width:100%;
+  text-align: center;
+  }
+  /*.icon1 {
+     background-image :url('Button_27_more-min.png');
+     background-repeat : no-repeat;
+
+   }
+   .img{
+     top:5px;
+     position:relative;
+   }
+   .moreIcon {
+       top:140px;
+         /*right:100px;*/
+       /*height: 48px;
+       width: 88px;
+       display: inline-block;
+       position: relative;
+       /*left: 0;*/
+       /*right:10;
+       bottom: 0;
+   }*/
+   /*.moreIcon {
+       font-size: .95em;
+   }
+   .moreIcon.playS1 {*/
+       /*background-position: 0 -2495px;*/
+   /*}*/
+   /*.moreIcon{
+     background-image : url('Button_29_play_icon_white-min.png')
+height: 48px;
+width: 88px;
+display: inline-block;
+position: absolute;
+left: 0;
+bottom: 0;
+}*/
+  @media only screen and (max-width: 1024px) {
   .float_left1{
     float:left!important;
     position:relative;
@@ -182,6 +272,92 @@ div.outerbox {
   .container2{
     top:200px;
   }
+  .container1{
+    top:300px;
+    position:relative;
+    text-align: center;
+  }
+  .video1{
+    top:200px;
+    position:relative;
+    text-align: cente
+  }
+
+  .container4{
+    top:450px;
+    position:absolute;;
+    width:100%;
+    text-align: center;
+    }
+    .moreIcon{
+      /*background-image : url('Button_27_play_more-min.png');*/
+ height: 48px;
+ width: 88px;
+ display: inline-block;
+ position: absolute;
+ right:-40px;
+ /*left: 0;*/
+ bottom: 0;
+}
+.icon1 {
+   background-image :url('Button_27_more-min.png');
+   background-repeat : no-repeat;
+
+ }
+
+}
+
+@media only screen and (max-width: 768px) {
+  .float_left1{
+    float:left!important;
+    position:relative;
+    left:5%;
+    top:800px;
+    text-align:center;
+  }
+  .float_right1{
+    float:right!important;
+    position:relative;
+    right:5%;
+    top:800px;
+    text-align:center;
+  }
+  .container2{
+    top:200px;
+  }
+  .container1{
+    top:300px;
+    position:relative;
+    text-align: center;
+  }
+  .video1{
+    top:200px;
+    position:relative;
+    text-align: center;
+  }
+
+  .container4{
+    top:500px;
+    position:absolute;;
+    width:100%;
+    text-align: center;
+    }
+    .moreIcon{
+      /*background-image : url('Button_27_play_more-min.png');*/
+ height: 48px;
+ width: 88px;
+ display: inline-block;
+ position: absolute;
+ right:-40px;
+ /*left: 0;*/
+ bottom: 0;
+}
+.icon1 {
+   background-image :url('Button_27_more-min.png');
+   background-repeat : no-repeat;
+
+ }
+
 }
 @media only screen and (max-width: 736px) {
   .float_left1{
@@ -198,6 +374,65 @@ div.outerbox {
     top:250px;
     text-align:center;
   }
+  .container4{
+    top:230px;
+    position:absolute;;
+    width:100%;
+    text-align: center;
+    }
+    .video1{
+      top:10px;
+      position:relative;
+      text-align: center;
+    }
+    .card {
+      background: #fff;
+      border-radius: 12px;
+        border-color: #ff0000 #00ff00 #0000ff rgb(250,0,255);
+      display: inline-block;
+      height: 120px;
+      /*margin: 1rem;*/
+      position: relative;
+      width: 150px;
+    }
+    .card-1 {
+      box-shadow: 0 2px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+      transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    }
+    .img{
+      top:5px;
+      position:relative;
+      width:120px;
+      height:90px;
+    }
+    .icon {
+       background-image :url('Button_29_play_icon_white-min1.png');
+       background-repeat : no-repeat;
+  }
+  .videoIcon {
+      top:70px; left:5px;
+      height: 48px;
+      width: 88px;
+      display: inline-block;
+      position: absolute;
+      bottom: 0;
+  }
+  .moreIcon{
+    /*background-image : url('Button_27_play_more-min.png');*/
+height: 48px;
+width: 88px;
+display: inline-block;
+position: absolute;
+right:-40px;
+/*left: 0;*/
+bottom: 0;
+}
+.icon1 {
+ background-image :url('Button_27_more-min.png');
+ background-repeat : no-repeat;
+
+}
+
 }
 @media only screen and (max-width: 732px) {
   .float_left1{
@@ -214,8 +449,130 @@ div.outerbox {
     top:250px;
     text-align:center;
   }
+  .container4{
+    top:200px;
+    position:absolute;;
+    width:100%;
+    text-align: center;
+    }
+    .container2{
+      top:100px;
+      position:absolute;;
+      width:100%;
+      text-align: center;
+      }
+    .card {
+      background: #fff;
+      border-radius: 12px;
+        border-color: #ff0000 #00ff00 #0000ff rgb(250,0,255);
+      display: inline-block;
+      height: 140px;
+      /*margin: 1rem;*/
+      position: relative;
+      width: 180px;
+    }
+    .card-1 {
+      box-shadow: 0 2px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+      transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    }
+    .img{
+      top:5px;
+      position:relative;
+      width:150px;
+      height:110px;
+    }
+    .icon {
+       background-image :url('Button_29_play_icon_white-min1.png');
+       background-repeat : no-repeat;
+  }
+  .videoIcon {
+      top:90px; left:5px;
+      height: 48px;
+      width: 88px;
+      display: inline-block;
+      position: absolute;
+      bottom: 0;
+  }
+  .moreIcon{
+    /*background-image : url('Button_27_play_more-min.png');*/
+height: 48px;
+width: 88px;
+display: inline-block;
+position: absolute;
+right:-40px;
+/*left: 0;*/
+bottom: 0;
+}
+.icon1 {
+ background-image :url('Button_27_more-min.png');
+ background-repeat : no-repeat;
+
 }
 
+}
+@media only screen and (max-width: 667px) {
+  .video1{
+    top:0px;
+    position:relative;
+    text-align: center;
+  }
+  /*.container4{
+    top:200px;
+    background-color: blue;
+    position:absolute;;
+    width:100%;
+    height:150px;
+    text-align: center;
+    }*/
+    .card {
+      background: #fff;
+      border-radius: 12px;
+        border-color: #ff0000 #00ff00 #0000ff rgb(250,0,255);
+      display: inline-block;
+      height: 140px;
+      /*margin: 1rem;*/
+      position: relative;
+      width: 180px;
+    }
+    .card-1 {
+      box-shadow: 0 2px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+      transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    }
+    .img{
+      top:5px;
+      position:relative;
+      width:150px;
+      height:110px;
+    }
+    .icon {
+       background-image :url('Button_29_play_icon_white-min1.png');
+       background-repeat : no-repeat;
+  }
+  .videoIcon {
+      top:90px; left:5px;
+      height: 48px;
+      width: 88px;
+      display: inline-block;
+      position: absolute;
+      bottom: 0;
+  }
+  .moreIcon{
+    /*background-image : url('Button_27_play_more-min.png');*/
+height: 48px;
+width: 88px;
+display: inline-block;
+position: absolute;
+right:-40px;
+/*left: 0;*/
+bottom: 0;
+}
+.icon1 {
+ background-image :url('Button_27_more-min.png');
+ background-repeat : no-repeat;
+
+}
+
+}
 @media only screen and (max-width: 640px) {
   .float_left1{
     float:left!important;
@@ -237,38 +594,60 @@ div.outerbox {
     width:100%;
     text-align: center;
   }
-  .card {
-    background: #fff;
-    border-radius: 12px;
-      border-color: #ff0000 #00ff00 #0000ff rgb(250,0,255);
-    display: inline-block;
-    height: 170px;
-    /*margin: 1rem;*/
-    position: relative;
-    width: 220px;
+  .container4{
+    top:200px;
+    position:absolute;;
+    width:100%;
+    text-align: center;
+    }
+    .card {
+      background: #fff;
+      border-radius: 12px;
+        border-color: #ff0000 #00ff00 #0000ff rgb(250,0,255);
+      display: inline-block;
+      height: 120px;
+      /*margin: 1rem;*/
+      position: relative;
+      width: 150px;
+    }
+    .card-1 {
+      box-shadow: 0 2px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+      transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    }
+    .img{
+      top:5px;
+      position:relative;
+      width:120px;
+      height:90px;
+    }
+    .icon {
+       background-image :url('Button_29_play_icon_white-min1.png');
+       background-repeat : no-repeat;
   }
-  .card-1 {
-    box-shadow: 0 2px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  .videoIcon {
+      top:70px; left:5px;
+      height: 48px;
+      width: 88px;
+      display: inline-block;
+      position: absolute;
+      bottom: 0;
   }
-  .img{
-    top:5px;
-    position:relative;
-    width:170px;
-    height:140px;
-  }
-  .icon {
-     background-image :url('Button_29_play_icon_white-min.png');
-     background-repeat : no-repeat;
+  .moreIcon{
+    /*background-image : url('Button_27_play_more-min.png');*/
+height: 48px;
+width: 88px;
+display: inline-block;
+position: absolute;
+right:-60px;
+/*left: 0;*/
+bottom: 0;
 }
-.videoIcon {
-    top:101px; left:10px;
-    height: 48px;
-    width: 88px;
-    display: inline-block;
-    position: absolute;
-    bottom: 0;
+.icon1 {
+ background-image :url('Button_27_more-min2.png');
+ background-repeat : no-repeat;
+
 }
+
 }
 @media only screen and (max-width: 568px) {
   .float_left1{
@@ -285,6 +664,27 @@ div.outerbox {
     top:200px;
     text-align:center;
   }
+  .container1{
+    top:60px;
+    position:relative;
+    text-align: center;
+  }
+  .moreIcon{
+    /*background-image : url('Button_27_play_more-min.png');*/
+height: 48px;
+width: 88px;
+display: inline-block;
+position: absolute;
+right:-60px;
+/*left: 0;*/
+bottom: 0;
+}
+.icon1 {
+ background-image :url('Button_27_more-min.png');
+ background-repeat : no-repeat;
+
+}
+
 }
 @media only screen and (max-width: 414px) {
   .float_center{
@@ -337,6 +737,76 @@ div.outerbox {
     top:550px;
     text-align:center;
   }
+  .container1{
+    top:200px;
+    position:relative;
+    text-align: center;
+  }
+  .video1{
+    top:100px;
+    position:relative;
+    text-align: center;
+  }
+  .container4{
+    top:500px;
+    position:absolute;;
+    width:100%;
+    text-align: center;
+    }
+    .container2{
+      top:200px;
+      position:absolute;;
+      width:100%;
+      text-align: center;
+      }
+    .card {
+      background: #fff;
+      border-radius: 12px;
+        border-color: #ff0000 #00ff00 #0000ff rgb(250,0,255);
+      display: inline-block;
+      height: 120px;
+      /*margin: 1rem;*/
+      position: relative;
+      width: 150px;
+    }
+    .card-1 {
+      box-shadow: 0 2px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+      transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    }
+    .img{
+      top:5px;
+      position:relative;
+      width:120px;
+      height:90px;
+    }
+    .icon {
+       background-image :url('Button_29_play_icon_white-min1.png');
+       background-repeat : no-repeat;
+  }
+  .videoIcon {
+      top:70px; left:5px;
+      height: 48px;
+      width: 88px;
+      display: inline-block;
+      position: absolute;
+      bottom: 0;
+  }
+  .moreIcon{
+    /*background-image : url('Button_27_play_more-min.png');*/
+height: 48px;
+width: 88px;
+display: inline-block;
+position: absolute;
+right:-60px;
+/*left: 0;*/
+bottom: 0;
+}
+.icon1 {
+ background-image :url('Button_27_more-min.png');
+ background-repeat : no-repeat;
+
+}
+
 }
 @media only screen and (max-width: 412px) {
   .float_center{
@@ -389,6 +859,71 @@ div.outerbox {
     top:500px;
     text-align:center;
   }
+  .container1{
+    top:200px;
+    position:relative;
+    text-align: center;
+  }
+  .container2{
+    top:200px;
+    position:absolute;;
+    width:100%;
+    text-align: center;
+    }
+  .container4{
+    top:500px;
+    position:absolute;;
+    width:100%;
+    text-align: center;
+    }
+    .card {
+      background: #fff;
+      border-radius: 12px;
+        border-color: #ff0000 #00ff00 #0000ff rgb(250,0,255);
+      display: inline-block;
+      height: 120px;
+      /*margin: 1rem;*/
+      position: relative;
+      width: 150px;
+    }
+    .card-1 {
+      box-shadow: 0 2px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+      transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    }
+    .img{
+      top:5px;
+      position:relative;
+      width:120px;
+      height:90px;
+    }
+    .icon {
+       background-image :url('Button_29_play_icon_white-min1.png');
+       background-repeat : no-repeat;
+  }
+  .videoIcon {
+      top:70px; left:5px;
+      height: 48px;
+      width: 88px;
+      display: inline-block;
+      position: absolute;
+      bottom: 0;
+  }
+  .moreIcon{
+    /*background-image : url('Button_27_play_more-min.png');*/
+height: 48px;
+width: 88px;
+display: inline-block;
+position: absolute;
+right:-60px;
+/*left: 0;*/
+bottom: 0;
+}
+.icon1 {
+ background-image :url('Button_27_more-min.png');
+ background-repeat : no-repeat;
+
+}
+
 }
 
 @media only screen and (max-width: 360px) {
@@ -442,38 +977,71 @@ div.outerbox {
     top:500px;
     text-align:center;
   }
-  .card {
-    background: #fff;
-    border-radius: 12px;
-      border-color: #ff0000 #00ff00 #0000ff rgb(250,0,255);
-    display: inline-block;
-    height: 170px;
-    /*margin: 1rem;*/
-    position: relative;
-    width: 220px;
+  .container4{
+    top:400px;
+    position:absolute;;
+    width:100%;
+    text-align: center;
+    }
+    .card {
+      background: #fff;
+      border-radius: 12px;
+        border-color: #ff0000 #00ff00 #0000ff rgb(250,0,255);
+      display: inline-block;
+      height: 120px;
+      /*margin: 1rem;*/
+      position: relative;
+      width: 150px;
+    }
+    .card-1 {
+      box-shadow: 0 2px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+      transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    }
+    .img{
+      top:5px;
+      position:relative;
+      width:120px;
+      height:90px;
+    }
+    .icon {
+       background-image :url('Button_29_play_icon_white-min1.png');
+       background-repeat : no-repeat;
   }
-  .card-1 {
-    box-shadow: 0 2px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  .videoIcon {
+      top:70px; left:5px;
+      height: 48px;
+      width: 88px;
+      display: inline-block;
+      position: absolute;
+      bottom: 0;
   }
-  .img{
-    top:5px;
-    position:relative;
-    width:170px;
-    height:140px;
-  }
-  .icon {
-     background-image :url('Button_29_play_icon_white-min1.png');
-     background-repeat : no-repeat;
+  .moreIcon{
+    /*background-image : url('Button_27_play_more-min.png');*/
+height: 48px;
+width: 88px;
+display: inline-block;
+position: absolute;
+right:-60px;
+/*left: 0;*/
+bottom: 0;
 }
-.videoIcon {
-    top:120px; left:10px;
-    height: 48px;
-    width: 88px;
-    display: inline-block;
-    position: absolute;
-    bottom: 0;
+.icon1 {
+ background-image :url('Button_27_more-min.png');
+ background-repeat : no-repeat;
+
 }
+
+/*.video1{
+  position:relative;
+  width:200px;
+  height:100px;
+  text-align: center;
+}*/
+/*.container4{
+  top:10px;
+  position:relative;
+  text-align: center;
+}*/
 }
 @media only screen and (max-width: 320px) {
   .float_center{
@@ -526,4 +1094,30 @@ div.outerbox {
     top:400px;
     text-align:center;
   }
+  .container1{
+    top:100px;
+    position:relative;
+    text-align: center;
+  }
+  #myvideo{
+    position:absolute;;
+    text-align: center;
+    width:auto;
+  }
+  .moreIcon{
+    /*background-image : url('Button_27_play_more-min.png');*/
+height: 48px;
+width: 88px;
+display: inline-block;
+position: absolute;
+right:-60px;
+/*left: 0;*/
+bottom: 0;
+}
+.icon1 {
+ background-image :url('Button_27_more-min.png');
+ background-repeat : no-repeat;
+
+}
+
 }

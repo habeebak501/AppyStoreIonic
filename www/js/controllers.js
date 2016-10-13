@@ -1,3 +1,9 @@
+/**
+*@fileName:controllers.js
+*@created By:
+*@date:
+*purpose:Creating Controllers using Ionic Framework
+*/
 angular.module('starter.controllers', [])
 .controller('categoryCtrl',function($scope,CategoryService,$ionicHistory){
   console.log("categorycontroller");
@@ -18,7 +24,7 @@ angular.module('starter.controllers', [])
             height: 180,
             top: 200,
             space: 220,
-            autoRotationSpeed: 10000,
+            autoRotationSpeed: 5000,
             loop: true
         };
         var promise = CategoryService.result();
@@ -49,9 +55,7 @@ angular.module('starter.controllers', [])
   };
     })
     .controller("contentCtrl", function($scope, $stateParams, $http,CategoryService) {
-        //  $scope.load=true;
         console.log('contentController');
-        //  $scope.pagination = Pagination.getNew(3);
         var pcatid = $stateParams.pid;
         var catid = $stateParams.cid;
         $scope.content_count = $stateParams.content_count;
@@ -86,11 +90,9 @@ angular.module('starter.controllers', [])
             })
             .then(function(response) {
               console.log(response);
-                // $scope.load=false;
                 $scope.result = response.data.Responsedetails.data_array;
                 console.log($scope.result);
-                //  $scope.pagination.numPages = Math.ceil($scope.result.length / $scope.pagination.perPage);
-            })
+        })
     })
     .controller("videoCtrl", function($scope,$stateParams,$http,$sce,CategoryService) {
         // $scope.load=true;
@@ -113,7 +115,7 @@ angular.module('starter.controllers', [])
             var video = document.getElementById("myVideo")
             isSupp = video.canPlayType("video/mp4");
             if (isSupp == "") {
-                video.src = "video4.ogg";
+                video.src = "mov_bbb.ogg";
             } else {
                 video.src = url;
                  video.poster ="loading.gif";

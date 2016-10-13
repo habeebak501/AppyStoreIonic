@@ -1,24 +1,26 @@
-<ion-view class="video">
-  <div class="container">
-         <center>
-          <div class="video">
-          <video id="myVideo" width="480" height="270" preload="auto" poster="loading.gif" controls autoplay>
-           <source src="{{url}}" type="video/mp4" width="480" height="270"></source>
-            <source src="video4.ogg" type="video/ogg"width="480" height="270"></source>
-            <source src="video4.webm" type="video/webm"width="480" height="270"></source>
+<ion-view style="background-color:black" class="video2">
+  <ion-content>
+  <!-- <div class="video2"> -->
+   <div ng-include="'templates/backVideo.html'"></div>
+   <center>
+  <div class="video1">
+          <video id="myVideo" width="320" height="200" preload="auto" poster="loading.gif" controls autoplay>
+           <source src="{{url}}" type="video/mp4" width="380" height="170"></source>
+            <source src="video4.ogg" type="video/ogg"width="380" height="170"></source>
+            <source src="video4.webm" type="video/webm"width="380" height="170"></source>
        </video>
      </div>
 </center>
+<!-- </div> -->
 <br>
-<div class = "container">
+<div class = "container4">
 <center>
 <div class="outerbox">
  <div class="row">
        <div class="span5" ng-click="changeVideo(x.dnld_url)" style="display: inline-block " ng-repeat="x in result" class='img-responsive'>
          <a>  <div class="card card-1">
                    <img class="img" style='border-radius: 10%;' ng-src='{{x.image_path}}' width="250"height="150" ui-sref='video({url:x.dnld_url,poster:x.image_path,pid:pcatid,cid:catid,content_count:x.content_count})'/>
-                   <span class="icon videoIcon playS"></span>
-
+                   <!-- <span class="icon videoIcon"></span> -->
                <p class="p1">{{x.title}}</p>
              </a>
                <br>
@@ -29,12 +31,13 @@
 </center>
 </div>
    <!-- <div class="btn pull-left">
-       <!--pagination.prevpage method is used to go previous page  -->
+       <!pagination.prevpage method is used to go previous page  -->
        <!-- <button class="button button5" ng-click="pagination.prevPage()" ng-hide="pagination.page == 0" ng-click="pagination.prevPage()">Previous</button>
    </div>
    <div class="btn pull-right">
-       <!-- pagination.nextpage method is used to go next page -->
+       <! pagination.nextpage method is used to go next page -->
        <!-- <button class="button button5" ng-click="pagination.nextPage()" ng-hide="pagination.page + 1 >= pagination.numPages" ng-click="pagination.nextPage()">Next</button>
-   </div>
-</div> -->
+   <! </div> -->
+<!-- </div> -->
+</ion-content>
 </ion-view>
