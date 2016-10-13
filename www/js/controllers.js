@@ -1,17 +1,20 @@
 /**
-*@fileName:controllers.js
-*@created By:
-*@date:
-*purpose:Creating Controllers using Ionic Framework
+*@FileName:controllers.js
+*@CreatedBy:Habeeb
+*@Date:
+*Purpose:Creating Controllers using Ionic Framework
 */
+/*Including All Controllers in appystore module*/
 angular.module('starter.controllers', [])
-.controller('categoryCtrl',function($scope,CategoryService,$ionicHistory){
+/*Display the CategoryImages using controller*/
+.controller('categoryCtrl',function($scope,CategoryService){
   console.log("categorycontroller");
   var array = [];
         $scope.images = [{
             'src': "loading.gif",
             caption: ' loading'
         }];
+        /*Carousel view options*/
         $scope.options = {
             clicking: true,
             sourceProp: 'src',
@@ -27,6 +30,7 @@ angular.module('starter.controllers', [])
             autoRotationSpeed: 5000,
             loop: true
         };
+        /*Retriving data from CategoryService using promise*/
         var promise = CategoryService.result();
         promise.then(function(data) {
             $scope.images = [];
@@ -50,11 +54,13 @@ angular.module('starter.controllers', [])
             console.log($scope.images);
             console.log(result);
         });
-        $scope.myGoBack = function() {
-    $ionicHistory.goBack();
-  };
+        /*goback function is used to go previous page*/
+  //       $scope.myGoBack = function() {
+  //   $ionicHistory.goBack();
+  // };
     })
-    .controller("contentCtrl", function($scope, $stateParams, $http,CategoryService) {
+    /*contentCtrl is used displaying the contentList*/
+    .controller("contentCtrl", function($scope, $stateParams, $http,CategoryService,$ionicHistory) {
         console.log('contentController');
         var pcatid = $stateParams.pid;
         var catid = $stateParams.cid;
@@ -66,9 +72,11 @@ angular.module('starter.controllers', [])
         $scope.catid = catid;
         console.log(pcatid, catid);
         var url = $stateParams.url;
+        /*contentList url*/
         var url = 'http://beta.appystore.in/appy_app/appyApi_handler.php?method=getContentList&content_type=videos&limit='+count+'&offset=0&catid=' + catid + '&pcatid=' + pcatid + '&age=1.5&incl_age=5';
         $scope.url = url;
         console.log(url);
+        /*Calling restApi for Retriving Data  */
         $http.get(url, {
                 headers: {
                     'Access-Control-Allow-Origin': 'true',
@@ -93,8 +101,12 @@ angular.module('starter.controllers', [])
                 $scope.result = response.data.Responsedetails.data_array;
                 console.log($scope.result);
         })
+        $scope.myGoBack1 = function() {
+        $ionicHistory.goBack();
+          };
     })
-    .controller("videoCtrl", function($scope,$stateParams,$http,$sce,CategoryService) {
+    /*videoCtrl is used to displaying videos*/
+    .controller("videoCtrl", function($scope,$stateParams,$http,$sce,CategoryService,$ionicHistory) {
         // $scope.load=true;
         console.log('videoController');
         $scope.content_count = $stateParams.content_count;
@@ -109,6 +121,10 @@ angular.module('starter.controllers', [])
         $scope.url = url;
         console.log("hi");
         console.log(url);
+        $scope.myGoBack = function() {
+	      $ionicHistory.goBack();
+          };
+          /*changeVideo function is used to change the videos*/
         $scope.changeVideo = function(url) {
         //  console.log(url,poster);
             url = $sce.trustAsResourceUrl(url);
@@ -125,6 +141,7 @@ angular.module('starter.controllers', [])
         $scope.pcatid = pcatid;
         $scope.catid = catid;
         console.log(pcatid, catid);
+        /*contentList url using to retrive videos data*/
         var url = 'http://beta.appystore.in/appy_app/appyApi_handler.php?method=getContentList&content_type=videos&limit=' + count + '&offset=0&catid=' + catid + '&pcatid=' + pcatid + '&age=1.5&incl_age=5';
         $http.get(url, {
                 headers: {

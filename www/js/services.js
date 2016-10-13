@@ -1,8 +1,20 @@
+/**
+*@FileName:service.js
+*@CreatedBy:Habeeb
+*@Date:
+*Purpose:To Create Services Using Ionic Framework
+*/
+/*create Service to the appyStore Module*/
 angular.module('starter.services', [])
+/*Creating the CategoryService for calling the RestApi and returning the promise*/
 .factory('CategoryService', function($http) {
 	var data = [];
   // var url = 'http://beta.appystore.in/appy_app/appyApi_handler.php?method=getCategoryList&content_type=videos&limit_start=0&age=1.5&incl_age=5';
 	return {
+		/**
+			* This function data using url
+			* @return {Object} --data
+			*/
 		result: function(){
        var url = 'http://beta.appystore.in/appy_app/appyApi_handler.php?method=getCategoryList&content_type=videos&limit_start=0&age=1.5&incl_age=5';
 			return $http.get(url
@@ -15,6 +27,7 @@ angular.module('starter.services', [])
                 'X_APPY_UserAgent':'Mozilla/5.0 (Linux; Android 5.0.2; Panasonic ELUGA Switch Build/LRX22G; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/51.0.2704.81 Mobile Safari/537.36'
                 }}).then(function(response){
 				data = response;
+				/*taking the promise object*/
 				return data;
 			});
 		}

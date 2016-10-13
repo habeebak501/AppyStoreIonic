@@ -185,7 +185,7 @@ div.outerbox {
   float:left!important;
   position:relative;
   left:5%;
-  top:5px;
+  /*top:5px;*/
   text-align:center;
 }
 .float_left1{
