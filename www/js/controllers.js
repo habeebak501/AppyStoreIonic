@@ -22,12 +22,12 @@ angular.module('starter.controllers', [])
             perspective: 35,
             startSlide: 0,
             border: 3,
-            dir: 'rtl',
+            dir: 'ltr',
             width: 260,
             height: 180,
             top: 200,
             space: 220,
-            autoRotationSpeed: 5000,
+            // autoRotationSpeed: 5000,
             loop: true
         };
         /*Retriving data from CategoryService using promise*/
@@ -102,6 +102,7 @@ angular.module('starter.controllers', [])
                 console.log($scope.result);
         })
         $scope.myGoBack1 = function() {
+          console.log("back function called");
         $ionicHistory.goBack();
           };
     })
@@ -121,7 +122,8 @@ angular.module('starter.controllers', [])
         $scope.url = url;
         console.log("hi");
         console.log(url);
-        $scope.myGoBack = function() {
+        $scope.myGoBack1 = function() {
+          console.log("back function called");
 	      $ionicHistory.goBack();
           };
           /*changeVideo function is used to change the videos*/

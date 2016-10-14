@@ -1,18 +1,19 @@
-<ion-view style="background-color:black" class="video2">
+<ion-view>
   <ion-content>
-  <!-- <div class="video2"> -->
 
    <div ng-include="'templates/backVideo.html'"></div>
-   <img ng-click = "myGoBack()" ng-src = "Button_14_back-min.png" height="50" weight="50">
-   <center>
-  <div class="video1">
-          <video id="myVideo" width="320" height="200" preload="auto" poster="loading.gif" controls autoplay>
-           <source src="{{url}}" type="video/mp4" width="380" height="170"></source>
-            <source src="video4.ogg" type="video/ogg"width="380" height="170"></source>
-            <source src="video4.webm" type="video/webm"width="380" height="170"></source>
+   <img ng-click = "myGoBack1()" ng-src = "Button_14_back-min.png" height="50" weight="50">
+    <div class="container5">
+   <div class="video1">
+     <center>
+          <video id="myVideo" class="img-rounded" width="320" height="200" preload="auto" poster="loading.gif" controls autoplay>
+           <source src="{{url}}" type="video/mp4" width="320" height="170"></source>
+            <source src="video4.ogg" type="video/ogg"width="320" height="170"></source>
+            <source src="video4.webm" type="video/webm"width="320" height="170"></source>
        </video>
-     </div>
+      <br>
 </center>
+  </div>
 <!-- </div> -->
 <br>
 <div class = "container4">
@@ -20,13 +21,14 @@
 <div class="outerbox">
  <div class="row">
        <div class="span5" ng-click="changeVideo(x.dnld_url)" style="display: inline-block " ng-repeat="x in result" class='img-responsive'>
-         <a>  <div class="card card-1">
-                   <img class="img" style='border-radius: 10%;' ng-src='{{x.image_path}}' width="250"height="150" ui-sref='video({url:x.dnld_url,poster:x.image_path,pid:pcatid,cid:catid,content_count:x.content_count})'/>
+         <a>  <div class="card1 card-1">
+                   <img class="img1" style='border-radius: 10%;' ng-src='{{x.image_path}}' width="250"height="150" ui-sref='video({url:x.dnld_url,poster:x.image_path,pid:pcatid,cid:catid,content_count:x.content_count})'/>
                    <!-- <span class="icon videoIcon"></span> -->
-               <p class="p1">{{x.title}}</p>
+               <!-- <p class="p1">{{x.title}}</p> -->
              </a>
                <br>
            </div>
+           <br>
        </div>
 </div>
 </div>
@@ -41,5 +43,6 @@
        <!-- <button class="button button5" ng-click="pagination.nextPage()" ng-hide="pagination.page + 1 >= pagination.numPages" ng-click="pagination.nextPage()">Next</button>
    <! </div> -->
 <!-- </div> -->
+</div>
 </ion-content>
 </ion-view>
