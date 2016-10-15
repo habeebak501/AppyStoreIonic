@@ -233,6 +233,22 @@ div.outerbox {
   width:100%;
   text-align: center;
   }
+  .img-rounded{
+      position:fixed;
+      left:300px;
+      top:100px;
+      height:200px;
+      width:380px;
+    display: inline-block;
+  }
+  /*.p2{
+    position:fixed;
+    text-align: center;
+    left:30%;
+    font-size: 30px;
+    top:5px;
+  }*/
+
   @media only screen and (max-width: 1024px) {
   .float_left1{
     float:left!important;
@@ -335,12 +351,13 @@ div.outerbox {
  }
  .img-rounded{
      position:fixed;
-     left:150px;
+     left:300px;
      top:100px;
-     height:280px;
-     width:480px;
+     height:200px;
+     width:380px;
    display: inline-block;
  }
+
  .card1 {
    background: #fff;
    border-radius: 12px;
@@ -357,7 +374,14 @@ div.outerbox {
    width:210px;
    height:110px;
  }
-
+ /*.p2{
+   position:fixed;
+   width:100%;
+   text-align: center;
+   left:50%;
+   font-size: 30px;
+   top:10px;
+ }*/
 }
 
 @media only screen and (max-width: 768px) {
@@ -484,7 +508,7 @@ div.outerbox {
     text-align:center;
   }
   .container4{
-    top:230px;
+    top:180px;
     position:absolute;
     width:100%;
     text-align: center;
@@ -546,6 +570,14 @@ div.outerbox {
   background-image :url('Button_27_more-min2.png');
   background-repeat : no-repeat;
 
+  }
+  .img-rounded{
+      position:fixed;
+      left:190px;
+      top:30px;
+      height:200px;
+      width:300px;
+    display: inline-block;
   }
 
 
@@ -654,6 +686,14 @@ div.outerbox {
       width:160px;
       height:60px;
     }
+    .img-rounded{
+        position:fixed;
+        left:150px;
+        top:20px;
+        height:200px;
+        width:380px;
+      display: inline-block;
+    }
 }
 @media only screen and (max-width: 667px) {
   .video1{
@@ -747,7 +787,7 @@ bottom: 0;
     text-align: center;
   }
   .container4{
-    top:180px;
+    top:160px;
     position:absolute;
     width:100%;
     text-align: center;
@@ -823,16 +863,23 @@ bottom: 0;
   height: 100px;
   /*margin: 1rem;*/
   position: relative;
-  width: 200px;
+  width: 160px;
 }
 .img1{
-  top:15px;
+  top:10px;
+  left:2px;
   position:relative;
-  width:160px;
-  height:60px;
+  width:150px;
+  height:80px;
 }
-
-
+.img-rounded{
+    position:fixed;
+    left:120px;
+    top:10px;
+    height:200px;
+    width:380px;
+  display: inline-block;
+}
 }
 @media only screen and (max-width: 568px) {
   .float_left1{
@@ -1083,8 +1130,22 @@ bottom: 0;
       width:160px;
       height:80px;
     }
+    .img-rounded{
+        position:fixed;
+        left:55px;
+        top:80px;
+        height:200px;
+        width:300px;
+      display: inline-block;
+    }
 
-
+    /*.p2{
+      position:fixed;
+      text-align: center;
+      left:20%;
+      font-size: 30px;
+      top:10px;
+    }*/
 }
 @media only screen and (max-width: 412px) {
   .float_center{
@@ -1153,8 +1214,15 @@ bottom: 0;
     position:absolute;;
     width:100%;
     text-align: center;
-    }
-  .container4{
+    }.img-rounded{
+    position:fixed;
+    left:100px;
+    top:10px;
+    height:200px;
+    width:380px;
+  display: inline-block;
+}
+   .container4{
     top:400px;
     position:absolute;;
     width:100%;
@@ -1174,12 +1242,15 @@ bottom: 0;
       box-shadow: 0 2px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
       transition: all 0.3s cubic-bezier(.25,.8,.25,1);
     }
-    .img{
-      top:5px;
-      position:relative;
-      width:160px;
-      height:140px;
+    .img-rounded{
+        position:fixed;
+        left:15px;
+        top:150px;
+        height:200px;
+        width:380px;
+      display: inline-block;
     }
+
     .icon {
        background-image :url('Button_29_play_icon_white-min.png');
        background-repeat : no-repeat;
@@ -1223,10 +1294,24 @@ bottom: 0;
     width:160px;
     height:80px;
   }
-
-
+  /*.p2{
+    position:fixed;
+    text-align: center;
+    left:18%;
+    font-size: 30px;
+    top:10px;
+  }*/
 }
-
+@media only screen and (max-width: 375px) {
+.img-rounded{
+    position:fixed;
+    left:35px;
+    top:80px;
+    height:200px;
+    width:300px;
+  display: inline-block;
+}
+}
 @media only screen and (max-width: 360px) {
   .float_center{
     float:center!important;
@@ -1349,27 +1434,32 @@ bottom: 0;
   border-radius: 12px;
     border-color: #ff0000 #00ff00 #0000ff rgb(250,0,255);
   display: inline-block;
-  height: 120px;
+  height: 100px;
   /*margin: 1rem;*/
   position: relative;
-  width: 200px;
+  width: 160px;
 }
 .img1{
-  top:15px;
+  top:10px;
+  left:2px;
   position:relative;
-  width:160px;
+  width:150px;
   height:80px;
 }
-/*.video1{
-  position:relative;
-  width:200px;
-  height:100px;
+.img-rounded{
+    position:fixed;
+    left:35px;
+    top:80px;
+    height:200px;
+    width:300px;
+  display: inline-block;
+}
+/*.p2{
+  position:fixed;
   text-align: center;
-}*/
-/*.container4{
+  left:40%;
+  font-size: 30px;
   top:10px;
-  position:relative;
-  text-align: center;
 }*/
 }
 @media only screen and (max-width: 320px) {
@@ -1475,7 +1565,7 @@ bottom: 0;
   /*background-image : url('Button_27_play_more-min.png');*/
   height: 48px;
   width: 88px;
-  display: inline-block;
+  display: inline-block;40px
   position: absolute;
   right:-60px;
   /*left: 0;*/
@@ -1502,5 +1592,19 @@ bottom: 0;
     width:160px;
     height:80px;
   }
-
+  .img-rounded{
+      position:fixed;
+      left:10px;
+      top:100px;
+      height:200px;
+      width:300px;
+    display: inline-block;
+  }
+  .p2{
+    position:fixed;
+    text-align: center;
+    left:25%;
+    font-size: 20px;
+    top:5px;
+  }
 }

@@ -5,7 +5,8 @@
 *@Purpose:Routing for Ionic Application
 */
 /*Include all Dependencies*/
-angular.module('starter', ['ionic', 'starter.controllers', 'starter.services','angular-carousel-3d'])
+angular.module('starter', ['ionic', 'starter.controllers', 'starter.services','angular-carousel-3d','ionicImgCache'
+])
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
     // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
@@ -28,7 +29,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services','a
   controller : 'categoryCtrl'
   })
   .state('content',{
-    url:'/content/?pid?cid?content_count',
+    url:'/content/?pid?cid?content_count?caption',
     templateUrl:'templates/content.html',
     controller:'contentCtrl'
   })
@@ -37,6 +38,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services','a
     templateUrl:'templates/video.html',
     controller:'videoCtrl'
   });
+
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/category');
 });

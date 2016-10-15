@@ -7,7 +7,7 @@
 /*Including All Controllers in appystore module*/
 angular.module('starter.controllers', [])
 /*Display the CategoryImages using controller*/
-.controller('categoryCtrl',function($scope,CategoryService){
+.controller('categoryCtrl',function($scope,CategoryService,myCache){
   console.log("categorycontroller");
   var array = [];
         $scope.images = [{
@@ -15,6 +15,7 @@ angular.module('starter.controllers', [])
             caption: ' loading'
         }];
         /*Carousel view options*/
+
         $scope.options = {
             clicking: true,
             sourceProp: 'src',
@@ -30,6 +31,15 @@ angular.module('starter.controllers', [])
             // autoRotationSpeed: 5000,
             loop: true
         };
+        var cache=myCache.get('CategoryImages');
+        console.log(cache);
+        if(cache){
+          $scope.images=cache;
+          console.log("cached");
+        }
+        else{
+          console.log("not cached");
+
         /*Retriving data from CategoryService using promise*/
         var promise = CategoryService.result();
         promise.then(function(data) {
@@ -54,10 +64,13 @@ angular.module('starter.controllers', [])
             console.log($scope.images);
             console.log(result);
         });
-        /*goback function is used to go previous page*/
-  //       $scope.myGoBack = function() {
-  //   $ionicHistory.goBack();
-  // };
+      }
+        $scope.$watch("images",function(newSlides,oldSlides){
+               // console.log("slidesChanged");
+               console.log(newSlides);
+             myCache.put("CategoryImages",newSlides);
+              $scope.images = myCache.get("CategoryImages");
+            });
     })
     /*contentCtrl is used displaying the contentList*/
     .controller("contentCtrl", function($scope, $stateParams, $http,CategoryService,$ionicHistory) {
@@ -70,6 +83,7 @@ angular.module('starter.controllers', [])
         $scope.content_count=count;
         $scope.pcatid = pcatid;
         $scope.catid = catid;
+        $scope.caption=$stateParams.caption;
         console.log(pcatid, catid);
         var url = $stateParams.url;
         /*contentList url*/

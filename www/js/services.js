@@ -32,4 +32,8 @@ angular.module('starter.services', [])
 			});
 		}
 	}
-});
+})
+.factory('myCache',function($cacheFactory){
+	console.log("myCache");
+	return $cacheFactory();
+})
