@@ -1,911 +1,451 @@
 /* Empty. Add your own CSS if you like */
-.img-responsive{
+
+.img-responsive {
   -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-
-}
-
-.video2{
+  -moz-background-size: cover;
   background-size: cover;
-  position:absolute;
-
 }
-.video1{
-  top:40px;
-  position:absolute;
-  width:100%;
+.video2 {
+  background-size: cover;
+  position: absolute;
+}
+.video1 {
+  top: 40px;
+  position: absolute;
+  width: 100%;
   text-align: center;
 }
-/*.video1{
-  top:100px;
-  position:relative;
-  text-align: center;
-}*/
-.container1{
-  top:200px;
-  position:absolute;
-  width:100%;
+.container1 {
+  top: 200px;
+  position: absolute;
+  width: 100%;
   text-align: center;
 }
-.container5{
-  /*top:50px;*/
-  position:absolute;
-  width:100%;
+.container5 {
+  position: absolute;
+  width: 100%;
   text-align: center;
 }
-.container4{
-  top:300px;
+.container4 {
+  top: 300px;
   background-color: black;
-  position:absolute;
-  width:100%;
+  position: absolute;
+  width: 100%;
   text-align: center;
+}
+#myvideo {
+  position: relative;
+  background-color: black;
+  width: 480px;
+  height: 270px;
+}
+.background, .background .pane, .background .item-complex .item-content {
+  background-image: url('../BG-min.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.card {
+  background: #fff;
+  border-radius: 12px;
+  border-color: #ff0000 #00ff00 #0000ff rgb(250, 0, 255);
+  display: inline-block;
+  height: 210px;
+  position: relative;
+  width: 270px;
+}
+.card-1 {
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+}
+.card-1:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+.card-2 {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+.card-3 {
+  box-shadow: 0 10px 20px rgba .card-1 {
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
   }
-#myvideo{
-  position:relative;
-  background-color: black;
-  width:480px;
-  height:270px;
+  (0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
-.background, .background .pane,.background .item-complex .item-content {
-
-    background-image: url('../BG-min.png');
-    background-repeat: no-repeat;
-    background-size:cover;
+.card-4 {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
-   .card {
-     background: #fff;
-     border-radius: 12px;
-       border-color: #ff0000 #00ff00 #0000ff rgb(250,0,255);
-     display: inline-block;
-     height: 210px;
-     /*margin: 1rem;*/
-     position: relative;
-     width: 270px;
-   }
-
-   .card-1 {
-     box-shadow: 0 2px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-     transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-   }
-
-   .card-1:hover {
-     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-   }
-
-   .card-2 {
-     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-   }
-
-   .card-3 {
-     box-shadow: 0 10px 20px rgba   .card-1 {
-     box-shadow: 0 2px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-     transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-   }(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-   }
-
-   .card-4 {
-     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-   }
-
-   .card-5 {
-     box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
-   }
-   .icon {
-      background-image :url('Button_29_play_icon_white-min.png');
-      background-repeat : no-repeat;
-
-    }
-    .img{
-      top:5px;
-      position:relative;
-    }
-    .videoIcon {
-        top:110px; left:5px;
-        height: 48px;
-        width: 88px;
-        display: inline-block;
-        position: absolute;
-        left: 0;
-        bottom: 0;
-    }
-    .videoIcon {
-        font-size: .95em;
-    }
-    .videoIcon.playS {
-        /*background-position: 0 -2495px;*/
-    }
-    .moreIcon{
-      /*background-image : url('Button_27_play_more-min.png');*/
- height: 48px;
- width: 88px;
- display: inline-block;
- position: absolute;
- right:-40px;
- /*left: 0;*/
- bottom: 0;
+.card-5 {
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+.icon {
+  background-image: url('Button_29_play_icon_white-min.png');
+  background-repeat: no-repeat;
+}
+.img {
+  top: 5px;
+  position: relative;
+}
+.videoIcon {
+  top: 110px;
+  left: 5px;
+  height: 48px;
+  width: 88px;
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.videoIcon {
+  font-size: .95em;
+}
+.videoIcon.playS {
+  /*background-position: 0 -2495px;*/
+}
+.moreIcon {
+  /*background-image : url('Button_27_play_more-min.png');*/
+  height: 48px;
+  width: 88px;
+  display: inline-block;
+  position: absolute;
+  right: -40px;
+  bottom: 0;
 }
 div.outerbox {
   overflow-x: scroll;
-    /*overflow-x: auto;*/
-    white-space: nowrap;
+  /*overflow-x: auto;*/
+  white-space: nowrap;
 }
 div.outerbox [class*="span"] {
-    display: inline-block;
-    float: none; /* Very important */
+  display: inline-block;
+  float: none;
+  /* Very important */
 }
 .icon1 {
-   background-image :url('Button_27_more-min1.png');
-   background-repeat : no-repeat;
-
- }
- .img{
-   top:5px;
-   position:relative;
- }
- .card1 {
-   background: #fff;
-   border-radius: 12px;
-     border-color: #ff0000 #00ff00 #0000ff rgb(250,0,255);
-   display: inline-block;
-   height: 100px;
-   /*margin: 1rem;*/
-   position: relative;
-   width: 200px;
- }
- .img1{
-   top:15px;
-   position:relative;
-   width:160px;
-   height:60px;
- }
-/* Test purposes */
-.outerbox .span5 { margin-top: 5px;min-height: 50px; }
-div.outerbox {
-    width: auto;
-    margin-left: auto;
-    margin-right: auto;
+  background-image: url('Button_27_more-min1.png');
+  background-repeat: no-repeat;
 }
-.float_center{
-  float:center!important;
-  position:relative;
-  left:35%;
-  text-align:center;
-}
-.float_center1{
-  float:center!important;
-  position:relative;
-  left:38%;
-  text-align:center;
-}
-.float_center2{
-  float:center!important;
-  position:relative;
-  left:41%;
-  text-align:center;
-}
-.oblique {
-    font-style: oblique;
-    font-size: 40px;
-    color:white;
-}
-.float_right{
-  float:right!important;
-  position:relative;
-  right:5%;
-  text-align:center;
-}
-.float_left{
-  float:left!important;
-  position:relative;
-  left:5%;
-  /*top:5px;*/
-  text-align:center;
-}
-.float_left1{
-  float:left!important;
-  position:relative;
-  left:5%;
-  top:500px;
-  text-align:center;
-}
-.float_right1{
-  float:right!important;
-  position:relative;
-  right:5%;
-  top:500px;
-  text-align:center;
-}
-/*.container1{
-  top:100px;
-  position:relative;
-  text-align: center;
-}*/
-.container2{
-  top:200px;
-  position:absolute;
-  width:100%;
-  text-align: center;
-}
-.container3{
-  top:100px;
-  position:absolute;
-  width:100%;
-  text-align: center;
-  }
-  .img-rounded{
-      position:fixed;
-      left:300px;
-      top:100px;
-      height:200px;
-      width:380px;
-    display: inline-block;
-  }
-  /*.p2{
-    position:fixed;
-    text-align: center;
-    left:30%;
-    font-size: 30px;
-    top:5px;
-  }*/
-
-  @media only screen and (max-width: 1024px) {
-  .float_left1{
-    float:left!important;
-    position:relative;
-    left:5%;
-    top:600px;
-    text-align:center;
-  }
-  .float_right1{
-    float:right!important;
-    position:relative;
-    right:5%;
-    top:600px;
-    text-align:center;
-  }
-  .container2{
-    top:200px;
-      width:100%;
-    position:absolute;
-    text-align: center;
-  }
-  .container1{
-    top:300px;
-    position:absolute;
-    width:100%;
-    text-align: center;
-  }
-  .video1{
-    top:50px;.container4{
-    top:180px;
-    position:absolute;
-    width:100%;
-    text-align: center;
-    }
-    /*.container4{
-    top:180px;
-    position:absolute;;
-    width:100%;
-    text-align: center;
-    }*/
-
-    .container4{
-      top:500px;
-      position:absolute;
-      width:100%;
-      text-align: center;
-      }
-    .card {
-      background: #fff;
-      border-radius: 12px;
-        border-color: #ff0000 #00ff00 #0000ff rgb(250,0,255);
-      display: inline-block;
-      height: 180px;
-      /*margin: 1rem;*/
-      position: relative;
-      width: 190px;
-    }
-    .card-1 {
-      box-shadow: 0 2px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-      transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-    }
-    .img{
-      top:5px;
-      position:relative;
-      width:160px;
-      height:140px;
-    }
-    .icon {
-       background-image :url('Button_29_play_icon_white-min.png');
-       background-repeat : no-repeat;
-  }
-  .videoIcon {
-      top:101px; left:5px;
-      height: 48px;
-      width: 88px;
-      display: inline-block;
-      position: absolute;
-      bottom: 0;
-  }
-  .moreIcon{
-    /*background-image : url('Button_27_play_more-min.png');*/
-  height: 48px;
-  width: 88px;
-  display: inline-block;
-  position: absolute;
-  right:-60px;
-  /*left: 0;*/
-  bottom: 0;
-  }
-  .icon1 {
-  background-image :url('Button_27_more-min2.png');
-  background-repeat : no-repeat;
-     }
-
- .container5{
-   /*top:50px;*/
-   position:absolute;
-   width:100%;
-   text-align: center;
- }
- .img-rounded{
-     position:fixed;
-     left:300px;
-     top:100px;
-     height:200px;
-     width:380px;
-   display: inline-block;
- }
-
- .card1 {
-   background: #fff;
-   border-radius: 12px;
-     border-color: #ff0000 #00ff00 #0000ff rgb(250,0,255);
-   display: inline-block;
-   height: 150px;
-   /*margin: 1rem;*/
-   position: relative;
-   width: 250px;
- }
- .img1{
-   top:15px;
-   position:relative;
-   width:210px;
-   height:110px;
- }
- /*.p2{
-   position:fixed;
-   width:100%;
-   text-align: center;
-   left:50%;
-   font-size: 30px;
-   top:10px;
- }*/
-}
-
-@media only screen and (max-width: 768px) {
-  .float_left1{
-    float:left!important;
-    position:relative;
-    left:5%;
-    top:800px;
-    text-align:center;
-  }
-  .float_right1{
-    float:right!important;
-    position:relative;
-    right:5%;
-    top:800px;
-    text-align:center;
-  }
-  .container2{
-    top:200px;
-  }
-  .container1{
-    top:200px;
-    position:absolute;
-    width:100%;
-    text-align: center;
-  }
-  .video1{
-    top:200px;
-    position:relative;
-    text-align: center;
-  }
-
-  .container4{
-    top:500px;
-    position:absolute;
-    width:100%;
-    text-align: center;
-    }
-    .card {
-      background: #fff;
-      border-radius: 12px;
-        border-color: #ff0000 #00ff00 #0000ff rgb(250,0,255);
-      display: inline-block;
-      height: 180px;
-      /*margin: 1rem;*/
-      position: relative;
-      width: 190px;
-    }
-    .card-1 {
-      box-shadow: 0 2px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-      transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-    }
-    .img{
-      top:5px;
-      position:relative;
-      width:160px;
-      height:140px;
-    }
-    .icon {
-       background-image :url('Button_29_play_icon_white-min.png');
-       background-repeat : no-repeat;
-  }
-  .videoIcon {
-      top:101px; left:5px;
-      height: 48px;
-      width: 88px;
-      display: inline-block;
-      position: absolute;
-      bottom: 0;
-  }
-  .moreIcon{
-    /*background-image : url('Button_27_play_more-min.png');*/
-  height: 48px;
-  width: 88px;
-  display: inline-block;
-  position: absolute;
-  right:-60px;
-  /*left: 0;*/
-  bottom: 0;
-  }
-  .icon1 {
-  background-image :url('Button_27_more-min2.png');
-  background-repeat : no-repeat;
-
-  }
-.img-rounded{
-    position:fixed;
-    left:150px;
-    top:100px;
-    height:280px;
-    width:480px;
-  display: inline-block;
-}
-.card1 {
-  background: #fff;
-  border-radius: 12px;
-    border-color: #ff0000 #00ff00 #0000ff rgb(250,0,255);
-  display: inline-block;
-  height: 150px;
-  /*margin: 1rem;*/
+.img {
+  top: 5px;
   position: relative;
-  width: 250px;
 }
-.img1{
-  top:15px;
-  position:relative;
-  width:210px;
-  height:110px;
-}
-}
-@media only screen and (max-width: 736px) {
-  .float_left1{
-    float:left!important;
-    position:relative;
-    left:5%;
-    top:250px;
-    text-align:center;
-  }
-  .float_right1{
-    float:right!important;
-    position:relative;
-    right:5%;
-    top:250px;
-    text-align:center;
-  }
-  .container4{
-    top:180px;
-    position:absolute;
-    width:100%;
-    text-align: center;
-    }
-    .container1{
-      top:80px;
-      position:absolute;
-      width:100%;
-      text-align: center;
-    }
-    .video1{
-      top:10px;
-      position:fixed;
-      text-align: center;
-    }
-    .card {
-      background: #fff;
-      border-radius: 12px;
-        border-color: #ff0000 #00ff00 #0000ff rgb(250,0,255);
-      display: inline-block;
-      height: 180px;
-      /*margin: 1rem;*/
-      position: relative;
-      width: 190px;
-    }
-    .card-1 {
-      box-shadow: 0 2px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-      transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-    }
-    .img{
-      top:5px;
-      position:relative;
-      width:160px;
-      height:140px;
-    }
-    .icon {
-       background-image :url('Button_29_play_icon_white-min.png');
-       background-repeat : no-repeat;
-  }
-  .videoIcon {
-      top:101px; left:5px;
-      height: 48px;
-      width: 88px;
-      display: inline-block;
-      position: absolute;
-      bottom: 0;
-  }
-  .moreIcon{
-    /*background-image : url('Button_27_play_more-min.png');*/
-  height: 48px;
-  width: 88px;
-  display: inline-block;
-  position: absolute;
-  right:-60px;
-  /*left: 0;*/
-  bottom: 0;
-  }
-  .icon1 {
-  background-image :url('Button_27_more-min2.png');
-  background-repeat : no-repeat;
-
-  }
-  .img-rounded{
-      position:fixed;
-      left:190px;
-      top:30px;
-      height:200px;
-      width:300px;
-    display: inline-block;
-  }
-
-
-}
-@media only screen and (max-width: 732px) {
-  .float_left1{
-    float:left!important;
-    position:relative;
-    left:5%;
-    top:250px;
-    text-align:center;
-  }
-  .float_right1{
-    float:right!important;
-    position:relative;
-    right:5%;
-    top:250px;
-    text-align:center;
-  }
-  .container4{
-    top:200px;
-    position:absolute;
-    width:100%;
-    text-align: center;
-    }
-    .container1{
-      top:50px;
-      position:absolute;
-      width:100%;
-      text-align: center;
-    }
-    .container2{
-      top:100px;
-      position:absolute;
-      width:100%;
-      text-align: center;
-      }
-      .video1{
-        top:5px;
-        /*background-color: blue;*/
-        position:fixed;
-        /*width:100%;*/
-        text-align: center;
-      }
-
-      .card {
-        background: #fff;
-        border-radius: 12px;
-          border-color: #ff0000 #00ff00 #0000ff rgb(250,0,255);
-        display: inline-block;
-        height: 180px;
-        /*margin: 1rem;*/
-        position: relative;
-        width: 190px;
-      }
-      .card-1 {
-        box-shadow: 0 2px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-        transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-      }
-      .img{
-        top:5px;
-        position:relative;
-        width:160px;
-        height:140px;
-      }
-      .icon {
-         background-image :url('Button_29_play_icon_white-min.png');
-         background-repeat : no-repeat;
-    }
-    .videoIcon {
-        top:101px; left:5px;
-        height: 48px;
-        width: 88px;
-        display: inline-block;
-        position: absolute;
-        bottom: 0;
-    }
-    .moreIcon{
-      /*background-image : url('Button_27_play_more-min.png');*/
-    height: 48px;
-    width: 88px;
-    display: inline-block;
-    position: absolute;
-    right:-60px;
-    /*left: 0;*/
-    bottom: 0;
-    }
-    .icon1 {
-    background-image :url('Button_27_more-min2.png');
-    background-repeat : no-repeat;
-
-    }
-    .card1 {
-      background: #fff;
-      border-radius: 12px;
-        border-color: #ff0000 #00ff00 #0000ff rgb(250,0,255);
-      display: inline-block;
-      height: 100px;
-      /*margin: 1rem;*/
-      position: relative;
-      width: 200px;
-    }
-    .img1{
-      top:15px;
-      position:relative;
-      width:160px;
-      height:60px;
-    }
-    .img-rounded{
-        position:fixed;
-        left:150px;
-        top:20px;
-        height:200px;
-        width:380px;
-      display: inline-block;
-    }
-}
-@media only screen and (max-width: 667px) {
-  .video1{
-    top:10px;
-    position:fixed;
-    text-align: center;
-  }
-  /*.container4{
-    top:200px;
-    background-color: blue;
-    position:absolute;;
-    width:100%;
-    height:150px;
-    text-align: center;
-    }*/
-    .card {
-      background: #fff;
-      border-radius: 12px;
-        border-color: #ff0000 #00ff00 #0000ff rgb(250,0,255);
-      display: inline-block;
-      height: 180px;
-      /*margin: 1rem;*/
-      position: relative;
-      width: 190px;
-    }
-    .card-1 {
-      box-shadow: 0 2px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-      transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-    }
-    .img{
-      top:5px;
-      position:relative;
-      width:160px;
-      height:140px;
-    }
-    .icon {
-       background-image :url('Button_29_play_icon_white-min.png');
-       background-repeat : no-repeat;
-  }
-  .videoIcon {
-      top:101px; left:5px;
-      height: 48px;
-      width: 88px;
-      display: inline-block;
-      position: absolute;
-      bottom: 0;
-  }
-  .moreIcon{
-    /*background-image : url('Button_27_play_more-min.png');*/
-height: 48px;
-width: 88px;
-display: inline-block;
-position: absolute;
-right:-60px;
-/*left: 0;*/
-bottom: 0;
-}
-.icon1 {
- background-image :url('Button_27_more-min2.png');
- background-repeat : no-repeat;
-
-}
-
-
-}
-@media only screen and (max-width: 640px) {
-  .float_left1{
-    float:left!important;
-    position:relative;
-    left:5%;
-    top:220px;
-    text-align:center;
-  }
-  .float_right1{
-    float:right!important;
-    position:relative;
-    right:5%;
-    top:220px;
-    text-align:center;
-  }
-  .container1{
-    top:50px;
-    position:absolute;
-    width:100%;
-    text-align: center;
-  }
-  .container2{
-    top:80px;
-    position:absolute;
-    width:100%;
-    text-align: center;
-  }
-  .container4{
-    top:160px;
-    position:absolute;
-    width:100%;
-    text-align: center;
-    }
-    .card {
-      background: #fff;
-      border-radius: 12px;
-        border-color: #ff0000 #00ff00 #0000ff rgb(250,0,255);
-      display: inline-block;
-      height: 180px;
-      /*margin: 1rem;*/
-      position: relative;
-      width: 190px;
-    }
-    .card-1 {
-      box-shadow: 0 2px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-      transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-    }
-    .img{
-      top:5px;
-      position:relative;
-      width:160px;
-      height:140px;
-    }
-    .icon {
-       background-image :url('Button_29_play_icon_white-min.png');
-       background-repeat : no-repeat;
-  }
-  .videoIcon {
-      top:101px; left:5px;
-      height: 48px;
-      width: 88px;
-      display: inline-block;
-      position: absolute;
-      bottom: 0;
-  }
-  .moreIcon{
-    /*background-image : url('Button_27_play_more-min.png');*/
-  height: 48px;
-  width: 88px;
-  display: inline-block;
-  position: absolute;
-  right:-60px;
-  /*left: 0;*/
-  bottom: 0;
-  }
-  .icon1 {
-  background-image :url('Button_27_more-min2.png');
-  background-repeat : no-repeat;
-
-  }
-
-  .video1{
-    top:10px;
-    /*background-color:black;*/
-    position:fixed;
-    width:100%;
-    text-align: center;
-  }
-/*#myvideo{
-  position:absolute;
-  top:10px;
-  background-color:red;
-  background-color: black;
-  width:300px;
-  height:240px;
-}*/
 .card1 {
   background: #fff;
   border-radius: 12px;
-    border-color: #ff0000 #00ff00 #0000ff rgb(250,0,255);
+  border-color: #ff0000 #00ff00 #0000ff rgb(250, 0, 255);
   display: inline-block;
   height: 100px;
   /*margin: 1rem;*/
   position: relative;
+  width: 200px;
+}
+.img1 {
+  top: 15px;
+  position: relative;
   width: 160px;
+  height: 60px;
 }
-.img1{
-  top:10px;
-  left:2px;
-  position:relative;
-  width:150px;
-  height:80px;
+
+/* Test purposes */
+
+.outerbox .span5 {
+  margin-top: 5px;
+  min-height: 50px;
 }
-.img-rounded{
-    position:fixed;
-    left:120px;
-    top:10px;
-    height:200px;
-    width:380px;
+div.outerbox {
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+.float_center {
+  float: center!important;
+  position: relative;
+  left: 35%;
+  text-align: center;
+}
+.float_center1 {
+  float: center!important;
+  position: relative;
+  left: 38%;
+  text-align: center;
+}
+.float_center2 {
+  float: center!important;
+  position: relative;
+  left: 41%;
+  text-align: center;
+}
+.oblique {
+  font-style: oblique;
+  font-size: 40px;
+  color: white;
+}
+.float_right {
+  float: right!important;
+  position: relative;
+  right: 5%;
+  text-align: center;
+}
+.float_left {
+  float: left!important;
+  position: relative;
+  left: 5%;
+  /*top:5px;*/
+  text-align: center;
+}
+.float_left1 {
+  float: left!important;
+  position: relative;
+  left: 5%;
+  top: 500px;
+  text-align: center;
+}
+.float_right1 {
+  float: right!important;
+  position: relative;
+  right: 5%;
+  top: 500px;
+  text-align: center;
+}
+.container2 {
+  top: 200px;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+}
+.container3 {
+  top: 100px;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+}
+.img-rounded {
+  position: fixed;
+  left: 300px;
+  top: 100px;
+  height: 200px;
+  width: 380px;
   display: inline-block;
 }
+input[type=text] {
+    width:70%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    position:relative;
+    /*font-size: 16px;*/
+    /*display: inline-block;*/
+    /*background-color: white;*/
+    /*background-image: url('searchicon.png');*/
+    /*background-position: 10px 10px;*/
+    /*background-repeat: no-repeat;*/
+    padding:22px 20px;
+    margin-left:80px;
+    top:-50px;
+    /*-webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;*/
 }
-@media only screen and (max-width: 568px) {
-  .float_left1{
-    float:left!important;
-    position:relative;
-    left:5%;
-    top:200px;
-    text-align:center;
+/*.search1{
+  top:4px;
+  left:-15px;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+}*/
+.p3{
+  position: absolute;
+  left:10px;
+  color:white;
+  font-family: courier;
+  font-size: 20px;
+}
+#rcorners1 {
+    border-radius: 25px;
+    background:white;
+    padding: 20px;
+    width: 100px;
+    height: 10px;
+    display:inline-block;
+    text-align: center;
+}
+.btn3{
+  position: relative;
+  top:-10px;
+  font-size: 13px;
+}
+#rcorners2 {
+    border-radius: 25px;
+    background:white;
+    padding: 20px;
+    width: 50px;
+    height: 10px;
+}
+
+#rcorners3 {
+    border-radius: 25px;
+    background:white;
+    padding: 20px;
+    width: 50px;
+    height: 10px;
+}
+.container6{
+  position:absolute;
+  top:100px;
+}
+@media only screen and (max-width: 1024px) {
+  .float_left1 {
+    float: left!important;
+    position: relative;
+    left: 5%;
+    top: 600px;
+    text-align: center;
   }
-  .float_right1{
-    float:right!important;
-    position:relative;
-    right:5%;
-    top:200px;
-    text-align:center;
+  .float_right1 {
+    float: right!important;
+    position: relative;
+    right: 5%;
+    top: 600px;
+    text-align: center;
   }
-  .container1{
-    top:50px;
-    position:absolute;
-    width:100%;
+  .container2 {
+    top: 200px;
+    width: 100%;
+    position: absolute;
+    text-align: center;
+  }
+  .container1 {
+    top: 300px;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+  }
+  .video1 {
+    top: 50px;
+    top: 180px;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+  }
+  .container4 {
+    top: 500px;
+    position: absolute;
+    width: 100%;
     text-align: center;
   }
   .card {
     background: #fff;
     border-radius: 12px;
-      border-color: #ff0000 #00ff00 #0000ff rgb(250,0,255);
+    border-color: #ff0000 #00ff00 #0000ff rgb(250, 0, 255);
+    display: inline-block;
+    height: 180px;
+    position: relative;
+    width: 190px;
+  }
+  .card-1 {
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+  }
+  .img {
+    top: 5px;
+    position: relative;
+    width: 160px;
+    height: 140px;
+  }
+  .icon {
+    background-image: url('Button_29_play_icon_white-min.png');
+    background-repeat: no-repeat;
+  }
+  .videoIcon {
+    top: 101px;
+    left: 5px;
+    height: 48px;
+    width: 88px;
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+  }
+  .moreIcon {
+    /*background-image : url('Button_27_play_more-min.png');*/
+    height: 48px;
+    width: 88px;
+    display: inline-block;
+    position: absolute;
+    right: -60px;
+    /*left: 0;*/
+    bottom: 0;
+  }
+  .icon1 {
+    background-image: url('Button_27_more-min2.png');
+    background-repeat: no-repeat;
+  }
+  .container5 {
+    /*top:50px;*/
+    position: absolute;
+    width: 100%;
+    text-align: center;
+  }
+  .img-rounded {
+    position: fixed;
+    left: 300px;
+    top: 100px;
+    height: 200px;
+    width: 380px;
+    display: inline-block;
+  }
+  .card1 {
+    background: #fff;
+    border-radius: 12px;
+    border-color: #ff0000 #00ff00 #0000ff rgb(250, 0, 255);
+    display: inline-block;
+    height: 150px;
+    /*margin: 1rem;*/
+    position: relative;
+    width: 250px;
+  }
+  .img1 {
+    top: 15px;
+    position: relative;
+    width: 210px;
+    height: 110px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .float_left1 {
+    float: left!important;
+    position: relative;
+    left: 5%;
+    top: 800px;
+    text-align: center;
+  }
+  .float_right1 {
+    float: right!important;
+    position: relative;
+    right: 5%;
+    top: 800px;
+    text-align: center;
+  }
+  .container2 {
+    top: 200px;
+  }
+  .container1 {
+    top: 200px;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+  }
+  .video1 {
+    top: 200px;
+    position: relative;
+    text-align: center;
+  }
+  .container4 {
+    top: 500px;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+  }
+  .card {
+    background: #fff;
+    border-radius: 12px;
+    border-color: #ff0000 #00ff00 #0000ff rgb(250, 0, 255);
     display: inline-block;
     height: 180px;
     /*margin: 1rem;*/
@@ -913,626 +453,622 @@ bottom: 0;
     width: 190px;
   }
   .card-1 {
-    box-shadow: 0 2px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
   }
-  .img{
-    top:5px;
-    position:relative;
-    width:160px;
-    height:140px;
+  .img {
+    top: 5px;
+    position: relative;
+    width: 160px;
+    height: 140px;
   }
   .icon {
-     background-image :url('Button_29_play_icon_white-min.png');
-     background-repeat : no-repeat;
+    background-image: url('Button_29_play_icon_white-min.png');
+    background-repeat: no-repeat;
   }
   .videoIcon {
-    top:101px; left:5px;
+    top: 101px;
+    left: 5px;
     height: 48px;
     width: 88px;
     display: inline-block;
     position: absolute;
     bottom: 0;
   }
-  .video1{
-    top:10px;
-    /*background-color: blue;*/
-    position:fixed;
-    width:100%;
-    text-align: center;
-  }
-  .moreIcon{
-  /*background-image : url('Button_27_play_more-min.png');*/
-  height: 48px;
-  width: 88px;
-  display: inline-block;
-  position: absolute;
-  right:-60px;
-  /*left: 0;*/
-  bottom: 0;
+  .moreIcon {
+    /*background-image : url('Button_27_play_more-min.png');*/
+    height: 48px;
+    width: 88px;
+    display: inline-block;
+    position: absolute;
+    right: -60px;
+    /*left: 0;*/
+    bottom: 0;
   }
   .icon1 {
-  background-image :url('Button_27_more-min2.png');
-  background-repeat : no-repeat;
-
+    background-image: url('Button_27_more-min2.png');
+    background-repeat: no-repeat;
+  }
+  .img-rounded {
+    position: fixed;
+    left: 150px;
+    top: 100px;
+    height: 280px;
+    width: 480px;
+    display: inline-block;
   }
   .card1 {
     background: #fff;
     border-radius: 12px;
-      border-color: #ff0000 #00ff00 #0000ff rgb(250,0,255);
+    border-color: #ff0000 #00ff00 #0000ff rgb(250, 0, 255);
+    display: inline-block;
+    height: 150px;
+    /*margin: 1rem;*/
+    position: relative;
+    width: 250px;
+  }
+  .img1 {
+    top: 15px;
+    position: relative;
+    width: 210px;
+    height: 110px;
+  }
+}
+@media only screen and (max-width: 736px) {
+  .float_left1 {
+    float: left!important;
+    position: relative;
+    left: 5%;
+    top: 250px;
+    text-align: center;
+  }
+  .float_right1 {
+    float: right!important;
+    position: relative;
+    right: 5%;
+    top: 250px;
+    text-align: center;
+  }
+  .container4 {
+    top: 180px;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+  }
+  .container1 {
+    top: 80px;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+  }
+  .video1 {
+    top: 10px;
+    position: fixed;
+    text-align: center;
+  }
+  .card {
+    background: #fff;
+    border-radius: 12px;
+    border-color: #ff0000 #00ff00 #0000ff rgb(250, 0, 255);
+    display: inline-block;
+    height: 180px;
+    /*margin: 1rem;*/
+    position: relative;
+    width: 190px;
+  }
+  .card-1 {
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+  }
+  .img {
+    top: 5px;
+    position: relative;
+    width: 160px;
+    height: 140px;
+  }
+  .icon {
+    background-image: url('Button_29_play_icon_white-min.png');
+    background-repeat: no-repeat;
+  }
+  .videoIcon {
+    top: 101px;
+    left: 5px;
+    height: 48px;
+    width: 88px;
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+  }
+  .moreIcon {
+    /*background-image : url('Button_27_play_more-min.png');*/
+    height: 48px;
+    width: 88px;
+    display: inline-block;
+    position: absolute;
+    right: -60px;
+    /*left: 0;*/
+    bottom: 0;
+  }
+  .icon1 {
+    background-image: url('Button_27_more-min2.png');
+    background-repeat: no-repeat;
+  }
+  .img-rounded {
+    position: fixed;
+    left: 190px;
+    top: 30px;
+    height: 200px;
+    width: 300px;
+    display: inline-block;
+  }
+}
+@media only screen and (max-width: 732px) {
+  .float_left1 {
+    float: left!important;
+    position: relative;
+    left: 5%;
+    top: 250px;
+    text-align: center;
+  }
+  .float_right1 {
+    float: right!important;
+    position: relative;
+    right: 5%;
+    top: 250px;
+    text-align: center;
+  }
+  .container4 {
+    top: 200px;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+  }
+  .container1 {
+    top: 50px;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+  }
+  .container2 {
+    top: 100px;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+  }
+  .video1 {
+    top: 5px;
+    /*background-color: blue;*/
+    position: fixed;
+    /*width:100%;*/
+    text-align: center;
+  }
+  .card {
+    background: #fff;
+    border-radius: 12px;
+    border-color: #ff0000 #00ff00 #0000ff rgb(250, 0, 255);
+    display: inline-block;
+    height: 180px;
+    /*margin: 1rem;*/
+    position: relative;
+    width: 190px;
+  }
+  .card-1 {
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+  }
+  .img {
+    top: 5px;
+    position: relative;
+    width: 160px;
+    height: 140px;
+  }
+  .icon {
+    background-image: url('Button_29_play_icon_white-min.png');
+    background-repeat: no-repeat;
+  }
+  .videoIcon {
+    top: 101px;
+    left: 5px;
+    height: 48px;
+    width: 88px;
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+  }
+  .moreIcon {
+    /*background-image : url('Button_27_play_more-min.png');*/
+    height: 48px;
+    width: 88px;
+    display: inline-block;
+    position: absolute;
+    right: -60px;
+    /*left: 0;*/
+    bottom: 0;
+  }
+  .icon1 {
+    background-image: url('Button_27_more-min2.png');
+    background-repeat: no-repeat;
+  }
+  .card1 {
+    background: #fff;
+    border-radius: 12px;
+    border-color: #ff0000 #00ff00 #0000ff rgb(250, 0, 255);
+    display: inline-block;
+    height: 100px;
+    /*margin: 1rem;*/
+    position: relative;
+    width: 200px;
+  }
+  .img1 {
+    top: 15px;
+    position: relative;
+    width: 160px;
+    height: 60px;
+  }
+  .img-rounded {
+    position: fixed;
+    left: 150px;
+    top: 20px;
+    height: 200px;
+    width: 380px;
+    display: inline-block;
+  }
+}
+@media only screen and (max-width: 667px) {
+  .video1 {
+    top: 10px;
+    position: fixed;
+    text-align: center;
+  }
+  .card {
+    background: #fff;
+    border-radius: 12px;
+    border-color: #ff0000 #00ff00 #0000ff rgb(250, 0, 255);
+    display: inline-block;
+    height: 180px;
+    /*margin: 1rem;*/
+    position: relative;
+    width: 190px;
+  }
+  .card-1 {
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+  }
+  .img {
+    top: 5px;
+    position: relative;
+    width: 160px;
+    height: 140px;
+  }
+  .icon {
+    background-image: url('Button_29_play_icon_white-min.png');
+    background-repeat: no-repeat;
+  }
+  .videoIcon {
+    top: 101px;
+    left: 5px;
+    height: 48px;
+    width: 88px;
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+  }
+  .moreIcon {
+    /*background-image : url('Button_27_play_more-min.png');*/
+    height: 48px;
+    width: 88px;
+    display: inline-block;
+    position: absolute;
+    right: -60px;
+    /*left: 0;*/
+    bottom: 0;
+  }
+  .icon1 {
+    background-image: url('Button_27_more-min2.png');
+    background-repeat: no-repeat;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .float_left1 {
+    float: left!important;
+    position: relative;
+    left: 5%;
+    top: 220px;
+    text-align: center;
+  }
+  .float_right1 {
+    float: right!important;
+    position: relative;
+    right: 5%;
+    top: 220px;
+    text-align: center;
+  }
+  .container1 {
+    top: 50px;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+  }
+  .container2 {
+    top: 80px;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+  }
+  .container4 {
+    top: 160px;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+  }
+  .card {
+    background: #fff;
+    border-radius: 12px;
+    border-color: #ff0000 #00ff00 #0000ff rgb(250, 0, 255);
+    display: inline-block;
+    height: 180px;
+    /*margin: 1rem;*/
+    position: relative;
+    width: 190px;
+  }
+  .card-1 {
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+  }
+  .img {
+    top: 5px;
+    position: relative;
+    width: 160px;
+    height: 140px;
+  }
+  .icon {
+    background-image: url('Button_29_play_icon_white-min.png');
+    background-repeat: no-repeat;
+  }
+  .videoIcon {
+    top: 101px;
+    left: 5px;
+    height: 48px;
+    width: 88px;
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+  }
+  .moreIcon {
+    /*background-image : url('Button_27_play_more-min.png');*/
+    height: 48px;
+    width: 88px;
+    display: inline-block;
+    position: absolute;
+    right: -60px;
+    /*left: 0;*/
+    bottom: 0;
+  }
+  .icon1 {
+    background-image: url('Button_27_more-min2.png');
+    background-repeat: no-repeat;
+  }
+  .video1 {
+    top: 10px;
+    /*background-color:black;*/
+    position: fixed;
+    width: 100%;
+    text-align: center;
+  }
+  .card1 {
+    background: #fff;
+    border-radius: 12px;
+    border-color: #ff0000 #00ff00 #0000ff rgb(250, 0, 255);
+    display: inline-block;
+    height: 100px;
+    /*margin: 1rem;*/
+    position: relative;
+    width: 160px;
+  }
+  .img1 {
+    top: 10px;
+    left: 2px;
+    position: relative;
+    width: 150px;
+    height: 80px;
+  }
+  .img-rounded {
+    position: fixed;
+    left: 120px;
+    top: 10px;
+    height: 200px;
+    width: 380px;
+    display: inline-block;
+  }
+}
+@media only screen and (max-width: 568px) {
+  .float_left1 {
+    float: left!important;
+    position: relative;
+    left: 5%;
+    top: 200px;
+    text-align: center;
+  }
+  .float_right1 {
+    float: right!important;
+    position: relative;
+    right: 5%;
+    top: 200px;
+    text-align: center;
+  }
+  .container1 {
+    top: 50px;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+  }
+  .card {
+    background: #fff;
+    border-radius: 12px;
+    border-color: #ff0000 #00ff00 #0000ff rgb(250, 0, 255);
+    display: inline-block;
+    height: 180px;
+    /*margin: 1rem;*/
+    position: relative;
+    width: 190px;
+  }
+  .card-1 {
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+  }
+  .img {
+    top: 5px;
+    position: relative;
+    width: 160px;
+    height: 140px;
+  }
+  .icon {
+    background-image: url('Button_29_play_icon_white-min.png');
+    background-repeat: no-repeat;
+  }
+  .videoIcon {
+    top: 101px;
+    left: 5px;
+    height: 48px;
+    width: 88px;
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+  }
+  .video1 {
+    top: 10px;
+    /*background-color: blue;*/
+    position: fixed;
+    width: 100%;
+    text-align: center;
+  }
+  .moreIcon {
+    /*background-image : url('Button_27_play_more-min.png');*/
+    height: 48px;
+    width: 88px;
+    display: inline-block;
+    position: absolute;
+    right: -60px;
+    /*left: 0;*/
+    bottom: 0;
+  }
+  .icon1 {
+    background-image: url('Button_27_more-min2.png');
+    background-repeat: no-repeat;
+  }
+  .card1 {
+    background: #fff;
+    border-radius: 12px;
+    border-color: #ff0000 #00ff00 #0000ff rgb(250, 0, 255);
     display: inline-block;
     height: 90px;
     /*margin: 1rem;*/
     position: relative;
     width: 200px;
   }
-  .container5{
+  .container5 {
     /*top:50px;*/
-    position:absolute;
-    width:100%;
+    position: absolute;
+    width: 100%;
     text-align: center;
   }
-  .img1{
-    top:15px;
-    position:relative;
-    width:160px;
-    height:60px;
+  .img1 {
+    top: 15px;
+    position: relative;
+    width: 160px;
+    height: 60px;
   }
-  #myvideo{
-    position:relative;
+  #myvideo {
+    position: relative;
     background-color: black;
-    width:300px;
-    height:170px;
+    width: 300px;
+    height: 170px;
   }
-
-  .container4{
-    top:160px;
-    position:absolute;
-    width:100%;
+  .container4 {
+    top: 160px;
+    position: absolute;
+    width: 100%;
     text-align: center;
-    }
-
+  }
 }
 @media only screen and (max-width: 414px) {
-  .float_center{
-    float:center!important;
-    position:relative;
-    left:10%;
-    text-align:center;
-  }
-  .float_center1{
-    float:center!important;
-    position:relative;
-    left:20%;
-    text-align:center;
-  }
-  .float_center2{
-    float:center!important;
-    position:relative;
-    left:30%;
-    text-align:center;
-  }
-  .oblique {
-      font-style: oblique;
-      font-size: 40px;
-      color:white;
-  }
-  .float_right{
-    float:right!important;
-    position:relative;
-    right:5%;
-    text-align:center;
-  }
-  .float_left{
-    float:left!important;
-    position:relative;
-    left:5%;
-    top:5px;
-    text-align:center;
-  }
-  .float_left1{
-    float:left!important;
-    position:relative;
-    left:5%;
-    top:550px;
-    text-align:center;
-  }
-  .float_right1{
-    float:right!important;
-    position:relative;
-    right:5%;
-    top:550px;
-    text-align:center;
-  }
-  .container1{
-    top:200px;
-    position:absolute;
-    width:100%;
-    text-align: center;
-  }
-  .video1{
-    top:100px;
-    position:relative;
-    text-align: center;
-  }
-  .container4{
-    top:500px;
-    position:absolute;
-    width:100%;
-    text-align: center;
-    }
-    .container2{
-      top:200px;
-      position:absolute;
-      width:100%;
-      text-align: center;
-      }
-      .card {
-        background: #fff;
-        border-radius: 12px;
-          border-color: #ff0000 #00ff00 #0000ff rgb(250,0,255);
-        display: inline-block;
-        height: 180px;
-        /*margin: 1rem;*/
-        position: relative;
-        width: 190px;
-      }
-      .card-1 {
-        box-shadow: 0 2px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-        transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-      }
-      .img{
-        top:5px;
-        position:relative;
-        width:160px;
-        height:140px;
-      }
-      .icon {
-         background-image :url('Button_29_play_icon_white-min.png');
-         background-repeat : no-repeat;
-    }
-    .videoIcon {
-        top:101px; left:5px;
-        height: 48px;
-        width: 88px;
-        display: inline-block;
-        position: absolute;
-        bottom: 0;
-    }
-    .moreIcon{
-      /*background-image : url('Button_27_play_more-min.png');*/
-    height: 48px;
-    width: 88px;
-    display: inline-block;
-    position: absolute;
-    right:-60px;
-    /*left: 0;*/
-    bottom: 0;
-    }
-    .icon1 {
-    background-image :url('Button_27_more-min2.png');
-    background-repeat : no-repeat;
-
-    }
-    .card1 {
-      background: #fff;
-      border-radius: 12px;
-        border-color: #ff0000 #00ff00 #0000ff rgb(250,0,255);
-      display: inline-block;
-      height: 120px;
-      /*margin: 1rem;*/
-      position: relative;
-      width: 200px;
-    }
-    .img1{
-      top:15px;
-      position:relative;
-      width:160px;
-      height:80px;
-    }
-    .img-rounded{
-        position:fixed;
-        left:55px;
-        top:80px;
-        height:200px;
-        width:300px;
-      display: inline-block;
-    }
-
-    /*.p2{
-      position:fixed;
-      text-align: center;
-      left:20%;
-      font-size: 30px;
-      top:10px;
-    }*/
-}
-@media only screen and (max-width: 412px) {
-  .float_center{
-    float:center!important;
-    position:relative;
-    left:10%;
-    text-align:center;
-  }
-  .float_center1{
-    float:center!important;
-    position:relative;
-    left:20%;
-    text-align:center;
-  }
-  .float_center2{
-    float:center!important;
-    position:relative;
-    left:30%;
-    text-align:center;
-  }
-  .oblique {
-      font-style: oblique;
-      font-size: 40px;
-      color:white;
-  }
-  .float_right{
-    float:right!important;
-    position:relative;
-    right:5%;
-    text-align:center;
-  }
-  .float_left{
-    float:left!important;
-    position:relative;
-    left:5%;
-    top:5px;
-    text-align:center;
-  }
-  .float_left1{
-    float:left!important;
-    position:relative;
-    left:5%;
-    top:500px;
-    text-align:center;
-  }
-  .float_right1{
-    float:right!important;
-    position:relative;
-    right:5%;
-    top:500px;
-    text-align:center;
-  }
-  .container1{
-    top:200px;
-    position:relative;
-    text-align: center;
-  }
-  .container1{
-    top:100px;
-    position:absolute;;
-    width:100%;
-    text-align: center;
-  }
-  .container2{
-    top:200px;
-    position:absolute;;
-    width:100%;
-    text-align: center;
-    }.img-rounded{
-    position:fixed;
-    left:100px;
-    top:10px;
-    height:200px;
-    width:380px;
-  display: inline-block;
-}
-   .container4{
-    top:400px;
-    position:absolute;;
-    width:100%;
-    text-align: center;
-    }
-    .card {
-      background: #fff;
-      border-radius: 12px;
-        border-color: #ff0000 #00ff00 #0000ff rgb(250,0,255);
-      display: inline-block;
-      height: 180px;
-      /*margin: 1rem;*/
-      position: relative;
-      width: 190px;
-    }
-    .card-1 {
-      box-shadow: 0 2px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-      transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-    }
-    .img-rounded{
-        position:fixed;
-        left:15px;
-        top:150px;
-        height:200px;
-        width:380px;
-      display: inline-block;
-    }
-
-    .icon {
-       background-image :url('Button_29_play_icon_white-min.png');
-       background-repeat : no-repeat;
-  }
-  .videoIcon {
-      top:101px; left:5px;
-      height: 48px;
-      width: 88px;
-      display: inline-block;
-      position: absolute;
-      bottom: 0;
-  }
-  .moreIcon{
-    /*background-image : url('Button_27_play_more-min.png');*/
-  height: 48px;
-  width: 88px;
-  display: inline-block;
-  position: absolute;
-  right:-60px;
-  /*left: 0;*/
-  bottom: 0;
-  }
-  .icon1 {
-  background-image :url('Button_27_more-min2.png');
-  background-repeat : no-repeat;
-
-  }
-  .card1 {
-    background: #fff;
-    border-radius: 12px;
-      border-color: #ff0000 #00ff00 #0000ff rgb(250,0,255);
-    display: inline-block;
-    height: 120px;
-    /*margin: 1rem;*/
+  .float_center {
+    float: center!important;
     position: relative;
-    width: 200px;
-  }
-  .img1{
-    top:15px;
-    position:relative;
-    width:160px;
-    height:80px;
-  }
-  /*.p2{
-    position:fixed;
+    left: 10%;
     text-align: center;
-    left:18%;
-    font-size: 30px;
-    top:10px;
-  }*/
-}
-@media only screen and (max-width: 375px) {
-.img-rounded{
-    position:fixed;
-    left:35px;
-    top:80px;
-    height:200px;
-    width:300px;
-  display: inline-block;
-}
-}
-@media only screen and (max-width: 360px) {
-  .float_center{
-    float:center!important;
-    position:relative;
-    left:10%;
-    text-align:center;
   }
-  .float_center1{
-    float:center!important;
-    position:relative;
-    left:20%;
-    text-align:center;
+  .float_center1 {
+    float: center!important;
+    position: relative;
+    left: 20%;
+    text-align: center;
   }
-  .float_center2{
-    float:center!important;
-    position:relative;
-    left:30%;
-    text-align:center;
+  .float_center2 {
+    float: center!important;
+    position: relative;
+    left: 30%;
+    text-align: center;
   }
   .oblique {
-      font-style: oblique;
-      font-size: 40px;
-      color:white;
+    font-style: oblique;
+    font-size: 40px;
+    color: white;
   }
-  .float_right{
-    float:right!important;
-    position:relative;
-    right:5%;
-    text-align:center;
-  }
-  .float_left{
-    float:left!important;
-    position:relative;
-    left:5%;
-    top:5px;
-    text-align:center;
-  }
-  .float_left1{
-    float:left!important;
-    position:relative;
-    left:5%;
-    top:500px;
-    text-align:center;
-  }
-  .float_right1{
-    float:right!important;
-    position:relative;
-    right:5%;
-    top:500px;
-    text-align:center;
-  }
-  .container1{
-    top:100px;
-    position:absolute;
-    width:100%;
+  .float_right {
+    float: right!important;
+    position: relative;
+    right: 5%;
     text-align: center;
   }
-  .container4{
-    top:300px;
-    position:absolute;
-    width:100%;
-    text-align: center;
-    }
-    .card {
-      background: #fff;
-      border-radius: 12px;
-        border-color: #ff0000 #00ff00 #0000ff rgb(250,0,255);
-      display: inline-block;
-      height: 180px;
-      /*margin: 1rem;*/
-      position: relative;
-      width: 190px;
-    }
-    .card-1 {
-      box-shadow: 0 2px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-      transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-    }
-    .img{
-      top:5px;
-      position:relative;
-      width:160px;
-      height:140px;
-    }
-    .icon {
-       background-image :url('Button_29_play_icon_white-min.png');
-       background-repeat : no-repeat;
-  }
-  .videoIcon {
-      top:101px; left:5px;
-      height: 48px;
-      width: 88px;
-      display: inline-block;
-      position: absolute;
-      bottom: 0;
-  }
-  .moreIcon{
-    /*background-image : url('Button_27_play_more-min.png');*/
-height: 48px;
-width: 88px;
-display: inline-block;
-position: absolute;
-right:-60px;
-/*left: 0;*/
-bottom: 0;
-}
-.icon1 {
- background-image :url('Button_27_more-min2.png');
- background-repeat : no-repeat;
-
-}
-.video1{
-  top:10px;
-  /*background-color: blue;*/
-  position:absolute;
-  width:100%;
-  text-align: center;
-}
-.card1 {
-  background: #fff;
-  border-radius: 12px;
-    border-color: #ff0000 #00ff00 #0000ff rgb(250,0,255);
-  display: inline-block;
-  height: 100px;
-  /*margin: 1rem;*/
-  position: relative;
-  width: 160px;
-}
-.img1{
-  top:10px;
-  left:2px;
-  position:relative;
-  width:150px;
-  height:80px;
-}
-.img-rounded{
-    position:fixed;
-    left:35px;
-    top:80px;
-    height:200px;
-    width:300px;
-  display: inline-block;
-}
-/*.p2{
-  position:fixed;
-  text-align: center;
-  left:40%;
-  font-size: 30px;
-  top:10px;
-}*/
-}
-@media only screen and (max-width: 320px) {
-  .float_center{
-    float:center!important;
-    position:relative;
-    left:10%;
-    text-align:center;
-  }
-  .float_center1{
-    float:center!important;
-    position:relative;
-    left:20%;
-    text-align:center;
-  }
-  .float_center2{
-    float:center!important;
-    position:relative;
-    left:25%;
-    text-align:center;
-  }
-  .oblique {
-      font-style: oblique;
-      font-size: 40px;
-      color:white;
-  }
-  .float_right{
-    float:right!important;
-    position:relative;
-    right:5%;
-    text-align:center;
-  }
-  .float_left{
-    float:left!important;
-    position:relative;
-    left:5%;
-    top:5px;
-    text-align:center;
-  }
-  .float_left1{
-    float:left!important;
-    position:relative;
-    left:5%;
-    top:400px;
-    text-align:center;
-  }
-  .float_right1{
-    float:right!important;
-    position:relative;
-    right:5%;
-    top:400px;
-    text-align:center;
-  }
-  /*.container1{
-    top:100px;
-    position:relative;
-    text-align: center;
-  }*/
-  .container1{
-    top:80px;
-    position:absolute;
-    width:100%;
+  .float_left {
+    float: left!important;
+    position: relative;
+    left: 5%;
+    top: 5px;
     text-align: center;
   }
-  #myvideo{
-    position:absolute;
+  .float_left1 {
+    float: left!important;
+    position: relative;
+    left: 5%;
+    top: 550px;
     text-align: center;
-    width:auto;
+  }
+  .float_right1 {
+    float: right!important;
+    position: relative;
+    right: 5%;
+    top: 550px;
+    text-align: center;
+  }
+  .container1 {
+    top: 200px;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+  }
+  .video1 {
+    top: 100px;
+    position: relative;
+    text-align: center;
+  }
+  .container4 {
+    top: 500px;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+  }
+  .container2 {
+    top: 200px;
+    position: absolute;
+    width: 100%;
+    text-align: center;
   }
   .card {
     background: #fff;
     border-radius: 12px;
-      border-color: #ff0000 #00ff00 #0000ff rgb(250,0,255);
+    border-color: #ff0000 #00ff00 #0000ff rgb(250, 0, 255);
     display: inline-block;
     height: 180px;
     /*margin: 1rem;*/
@@ -1540,71 +1076,509 @@ bottom: 0;
     width: 190px;
   }
   .card-1 {
-    box-shadow: 0 2px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
   }
-  .img{
-    top:5px;
-    position:relative;
-    width:160px;
-    height:140px;
+  .img {
+    top: 5px;
+    position: relative;
+    width: 160px;
+    height: 140px;
   }
   .icon {
-     background-image :url('Button_29_play_icon_white-min.png');
-     background-repeat : no-repeat;
+    background-image: url('Button_29_play_icon_white-min.png');
+    background-repeat: no-repeat;
   }
   .videoIcon {
-    top:101px; left:5px;
+    top: 101px;
+    left: 5px;
     height: 48px;
     width: 88px;
     display: inline-block;
     position: absolute;
     bottom: 0;
   }
-  .moreIcon{
-  /*background-image : url('Button_27_play_more-min.png');*/
-  height: 48px;
-  width: 88px;
-  display: inline-block;40px
-  position: absolute;
-  right:-60px;
-  /*left: 0;*/
-  bottom: 0;
+  .moreIcon {
+    /*background-image : url('Button_27_play_more-min.png');*/
+    height: 48px;
+    width: 88px;
+    display: inline-block;
+    position: absolute;
+    right: -60px;
+    /*left: 0;*/
+    bottom: 0;
   }
   .icon1 {
-  background-image :url('Button_27_more-min2.png');
-  background-repeat : no-repeat;
-
+    background-image: url('Button_27_more-min2.png');
+    background-repeat: no-repeat;
   }
   .card1 {
     background: #fff;
     border-radius: 12px;
-      border-color: #ff0000 #00ff00 #0000ff rgb(250,0,255);
+    border-color: #ff0000 #00ff00 #0000ff rgb(250, 0, 255);
     display: inline-block;
     height: 120px;
     /*margin: 1rem;*/
     position: relative;
     width: 200px;
   }
-  .img1{
-    top:15px;
-    position:relative;
-    width:160px;
-    height:80px;
+  .img1 {
+    top: 15px;
+    position: relative;
+    width: 160px;
+    height: 80px;
   }
-  .img-rounded{
-      position:fixed;
-      left:10px;
-      top:100px;
-      height:200px;
-      width:300px;
+  .img-rounded {
+    position: fixed;
+    left: 55px;
+    top: 80px;
+    height: 200px;
+    width: 300px;
     display: inline-block;
   }
-  .p2{
-    position:fixed;
+}
+@media only screen and (max-width: 412px) {
+  .float_center {
+    float: center!important;
+    position: relative;
+    left: 10%;
     text-align: center;
-    left:25%;
+  }
+  .float_center1 {
+    float: center!important;
+    position: relative;
+    left: 20%;
+    text-align: center;
+  }
+  .float_center2 {
+    float: center!important;
+    position: relative;
+    left: 30%;
+    text-align: center;
+  }
+  .oblique {
+    font-style: oblique;
+    font-size: 40px;
+    color: white;
+  }
+  .float_right {
+    float: right!important;
+    position: relative;
+    right: 5%;
+    text-align: center;
+  }
+  .float_left {
+    float: left!important;
+    position: relative;
+    left: 5%;
+    top: 5px;
+    text-align: center;
+  }
+  .float_left1 {
+    float: left!important;
+    position: relative;
+    left: 5%;
+    top: 500px;
+    text-align: center;
+  }
+  .float_right1 {
+    float: right!important;
+    position: relative;
+    right: 5%;
+    top: 500px;
+    text-align: center;
+  }
+  /*.container1{
+    top:200px;
+    position:relative;
+    text-align: center;
+  }*/
+  .container1 {
+    top: 100px;
+    position: absolute;
+    ;
+    width: 100%;
+    text-align: center;
+  }
+  .container2 {
+    top: 200px;
+    position: absolute;
+    ;
+    width: 100%;
+    text-align: center;
+  }
+  .img-rounded {
+    position: fixed;
+    left: 100px;
+    top: 10px;
+    height: 200px;
+    width: 380px;
+    display: inline-block;
+  }
+  .container4 {
+    top: 400px;
+    position: absolute;
+    ;
+    width: 100%;
+    text-align: center;
+  }
+  .card {
+    background: #fff;
+    border-radius: 12px;
+    border-color: #ff0000 #00ff00 #0000ff rgb(250, 0, 255);
+    display: inline-block;
+    height: 180px;
+    /*margin: 1rem;*/
+    position: relative;
+    width: 190px;
+  }
+  .card-1 {
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+  }
+  .img-rounded {
+    position: fixed;
+    left: 15px;
+    top: 150px;
+    height: 200px;
+    width: 380px;
+    display: inline-block;
+  }
+  .icon {
+    background-image: url('Button_29_play_icon_white-min.png');
+    background-repeat: no-repeat;
+  }
+  .videoIcon {
+    top: 101px;
+    left: 5px;
+    height: 48px;
+    width: 88px;
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+  }
+  .moreIcon {
+    /*background-image : url('Button_27_play_more-min.png');*/
+    height: 48px;
+    width: 88px;
+    display: inline-block;
+    position: absolute;
+    right: -60px;
+    /*left: 0;*/
+    bottom: 0;
+  }
+  .icon1 {
+    background-image: url('Button_27_more-min2.png');
+    background-repeat: no-repeat;
+  }
+  .card1 {
+    background: #fff;
+    border-radius: 12px;
+    border-color: #ff0000 #00ff00 #0000ff rgb(250, 0, 255);
+    display: inline-block;
+    height: 120px;
+    /*margin: 1rem;*/
+    position: relative;
+    width: 200px;
+  }
+  .img1 {
+    top: 15px;
+    position: relative;
+    width: 160px;
+    height: 80px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .img-rounded {
+    position: fixed;
+    left: 35px;
+    top: 80px;
+    height: 200px;
+    width: 300px;
+    display: inline-block;
+  }
+}
+@media only screen and (max-width: 360px) {
+  .float_center {
+    float: center!important;
+    position: relative;
+    left: 10%;
+    text-align: center;
+  }
+  .float_center1 {
+    float: center!important;
+    position: relative;
+    left: 20%;
+    text-align: center;
+  }
+  .float_center2 {
+    float: center!important;
+    position: relative;
+    left: 30%;
+    text-align: center;
+  }
+  .oblique {
+    font-style: oblique;
+    font-size: 40px;
+    color: white;
+  }
+  .float_right {
+    float: right!important;
+    position: relative;
+    right: 5%;
+    text-align: center;
+  }
+  .float_left {
+    float: left!important;
+    position: relative;
+    left: 5%;
+    top: 5px;
+    text-align: center;
+  }
+  .float_left1 {
+    float: left!important;
+    position: relative;
+    left: 5%;
+    top: 500px;
+    text-align: center;
+  }
+  .float_right1 {
+    float: right!important;
+    position: relative;
+    right: 5%;
+    top: 500px;
+    text-align: center;
+  }
+  .container1 {
+    top: 100px;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+  }
+  .container4 {
+    top: 300px;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+  }
+  .card {
+    background: #fff;
+    border-radius: 12px;
+    border-color: #ff0000 #00ff00 #0000ff rgb(250, 0, 255);
+    display: inline-block;
+    height: 180px;
+    /*margin: 1rem;*/
+    position: relative;
+    width: 190px;
+  }
+  .card-1 {
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+  }
+  .img {
+    top: 5px;
+    position: relative;
+    width: 160px;
+    height: 140px;
+  }
+  .icon {
+    background-image: url('Button_29_play_icon_white-min.png');
+    background-repeat: no-repeat;
+  }
+  .videoIcon {
+    top: 101px;
+    left: 5px;
+    height: 48px;
+    width: 88px;
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+  }
+  .moreIcon {
+    /*background-image : url('Button_27_play_more-min.png');*/
+    height: 48px;
+    width: 88px;
+    display: inline-block;
+    position: absolute;
+    right: -60px;
+    /*left: 0;*/
+    bottom: 0;
+  }
+  .icon1 {
+    background-image: url('Button_27_more-min2.png');
+    background-repeat: no-repeat;
+  }
+  .video1 {
+    top: 10px;
+    /*background-color: blue;*/
+    position: absolute;
+    width: 100%;
+    text-align: center;
+  }
+  .card1 {
+    background: #fff;
+    border-radius: 12px;
+    border-color: #ff0000 #00ff00 #0000ff rgb(250, 0, 255);
+    display: inline-block;
+    height: 100px;
+    /*margin: 1rem;*/
+    position: relative;
+    width: 160px;
+  }
+  .img1 {
+    top: 10px;
+    left: 2px;
+    position: relative;
+    width: 150px;
+    height: 80px;
+  }
+  .img-rounded {
+    position: fixed;
+    left: 35px;
+    top: 80px;
+    height: 200px;
+    width: 300px;
+    display: inline-block;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .float_center {
+    float: center!important;
+    position: relative;
+    left: 10%;
+    text-align: center;
+  }
+  .float_center1 {
+    float: center!important;
+    position: relative;
+    left: 20%;
+    text-align: center;
+  }
+  .float_center2 {
+    float: center!important;
+    position: relative;
+    left: 25%;
+    text-align: center;
+  }
+  .oblique {
+    font-style: oblique;
+    font-size: 40px;
+    color: white;
+  }
+  .float_right {
+    float: right!important;
+    position: relative;
+    right: 5%;
+    text-align: center;
+  }
+  .float_left {
+    float: left!important;
+    position: relative;
+    left: 5%;
+    top: 5px;
+    text-align: center;
+  }
+  .float_left1 {
+    float: left!important;
+    position: relative;
+    left: 5%;
+    top: 400px;
+    text-align: center;
+  }
+  .float_right1 {
+    float: right!important;
+    position: relative;
+    right: 5%;
+    top: 400px;
+    text-align: center;
+  }
+  .container1 {
+    top: 80px;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+  }
+  #myvideo {
+    position: absolute;
+    text-align: center;
+    width: auto;
+  }
+  .card {
+    background: #fff;
+    border-radius: 12px;
+    border-color: #ff0000 #00ff00 #0000ff rgb(250, 0, 255);
+    display: inline-block;
+    height: 180px;
+    /*margin: 1rem;*/
+    position: relative;
+    width: 190px;
+  }
+  .card-1 {
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+  }
+  .img {
+    top: 5px;
+    position: relative;
+    width: 160px;
+    height: 140px;
+  }
+  .icon {
+    background-image: url('Button_29_play_icon_white-min.png');
+    background-repeat: no-repeat;
+  }
+  .videoIcon {
+    top: 101px;
+    left: 5px;
+    height: 48px;
+    width: 88px;
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+  }
+  .moreIcon {
+    /*background-image : url('Button_27_play_more-min.png');*/
+    height: 48px;
+    width: 88px;
+    display: inline-block;
+    position: absolute;
+    right: -60px;
+    /*left: 0;*/
+    bottom: 0;
+  }
+  .icon1 {
+    background-image: url('Button_27_more-min2.png');
+    background-repeat: no-repeat;
+  }
+  .card1 {
+    background: #fff;
+    border-radius: 12px;
+    border-color: #ff0000 #00ff00 #0000ff rgb(250, 0, 255);
+    display: inline-block;
+    height: 120px;
+    /*margin: 1rem;*/
+    position: relative;
+    width: 200px;
+  }
+  .img1 {
+    top: 15px;
+    position: relative;
+    width: 160px;
+    height: 80px;
+  }
+  .img-rounded {
+    position: fixed;
+    left: 10px;
+    top: 100px;
+    height: 200px;
+    width: 300px;
+    display: inline-block;
+  }
+  .p2 {
+    position: fixed;
+    text-align: center;
+    left: 25%;
     font-size: 20px;
-    top:5px;
+    top: 5px;
   }
 }

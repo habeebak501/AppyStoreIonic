@@ -5,28 +5,29 @@
 *@Purpose:To Displaying the contentList
  -->
 <ion-view class="content">
-   <ion-content>
-     <div ng-include="'templates/back.html'"></div>
-   <img ng-click = "myGoBack1()" ng-src = "Button_14_back-min.png" height="50" weight="50">
-  <center>  <h1 style="color:white;font-family:courier;">{{caption}}</h1></center>
-   <div class="container2">
-    <div class="outerbox">
-      <div class="row">
-        <center>
+  <ion-content>
+    <div ng-include="'templates/back.html'"></div>
+    <img ng-click="myGoBack()" ng-src="Button_14_back-min.png" height="50" weight="50">
+    <center>
+      <h1 style="color:white;font-family:courier;">{{caption}}</h1></center>
+    <div class="container2">
+      <div class="outerbox">
+        <div class="row">
+          <center>
             <div class="span5" style="display: inline-block " ng-repeat="x in result" class='img-responsive'>
-
-            <a ui-sref='video({url:x.dnld_url,pid:pcatid,cid:catid,content_count:content_count})'> <div class="card card-1">
-                 <img class="img" style='border-radius: 12%' ng-src='{{x.image_path}}' width="250"height="150"/>
-                 <span class="icon videoIcon playS"></span>
-                    <p class="p1">{{x.title}}</p>
-                </a>
-                <span class="icon1 moreIcon"></span>
-             <br>
-         </div>
- </center>
-</div>
-  </div>
-</div>
-</div>
- </ion-content>
+              <a ui-sref='video({url:x.dnld_url,pid:pcatid,cid:catid,content_count:content_count})'>
+                <div class="card card-1">
+                  <img class="img" style='border-radius: 12%' ng-src='{{x.image_path}}' width="250" height="150" />
+                  <span class="icon videoIcon playS"></span>
+                  <p class="p1">{{x.title}}</p>
+              </a>
+              <span class="icon1 moreIcon"></span>
+              <br>
+              </div>
+          </center>
+          </div>
+        </div>
+      </div>
+    </div>
+  </ion-content>
 </ion-view>
