@@ -107,7 +107,7 @@ angular.module('starter.controllers', [])
       $timeout(function () {
       $ionicLoading.hide();
       $scope.stooges = [{name: 'Moe'}, {name: 'Larry'}, {name: 'Curly'}];
-    },500);
+    },5000);
       /*Calling restApi for Retriving Data  */
       $http.get(url, {
           headers: {
@@ -139,14 +139,12 @@ angular.module('starter.controllers', [])
       console.log("back function called");
       $ionicHistory.goBack();
     };
-
     $scope.$watch("result", function(newResult, oldResult) {
       console.log("slidesChanged");
       console.log(newResult);
       //  myCache.put($scope.caption, newResult);
       $scope.result = myCache.get($scope.caption);
     });
-
     })
 /*videoCtrl is used to displaying videos*/
 .controller("videoCtrl", function($scope, $stateParams, $http, $sce, CategoryService, $ionicHistory,$ionicLoading,$timeout) {
@@ -232,6 +230,7 @@ angular.module('starter.controllers', [])
 
       });
   })
+  /*SearchCtrl is used to Search the pirticular content images using categoryList*/
   .controller("SearchCtrl", function($window,$scope, SearchService, $stateParams, $ionicHistory, $state,$timeout,$ionicLoading) {
     console.log("SearchCtrl");
     $scope.ChangeKeyword = function(name) {
@@ -252,6 +251,8 @@ angular.module('starter.controllers', [])
           maxWidth: 200,
           showDelay: 0
           });
+          /*Retriving Data From SearchServices using promisee
+          */
           SearchService.getData(url).then(function(data) {
             console.log(data);
             // $scope.result = data.data.Responsedetails[0].data_array;
@@ -259,6 +260,7 @@ angular.module('starter.controllers', [])
             console.log($scope.count);
             var count=$scope.count;
             console.log(count);
+            /*Search url for retriving data*/
           var url = "http://beta.appystore.in/appy_app/appyApi_handler.php?method=search&keyword=" + name + "&content_type=appsgames&limit="+count+"&offset=0&age=1&incl_age=6";
           console.log(url);
           SearchService.getData(url).then(function(data) {
@@ -269,9 +271,7 @@ angular.module('starter.controllers', [])
             console.log(data);
             $scope.result1 = data.data.Responsedetails[0].data_array;
             console.log($scope.result1);
-
           })
-
           })
           if ($scope.textbox) {
             console.log($scope.textbox);
@@ -279,26 +279,11 @@ angular.module('starter.controllers', [])
             console.log(textbox);
             $state.go('.searchImages');
           }
-          // var url="http://beta.appystore.in/appy_app/appyApi_handler.php?method=search&keyword="+textbox+"&content_type=appsgames&limit=5&offset=0&age=1&incl_age=6";
-          // console.log(url);
-          // SearchService.getData(url).then(function(data){
-          //   console.log("welcome");
-          //   console.log(data);
-          // })
-        };
+        };/*myGoBack function is used to go previous page*/
         $scope.myGoBack = function() {
           console.log("fc");
           // $ionicHistory.goBack();
            $window.history.back();
         };
       }
-      //  $scope.Name="hello";
-      //  $scope.keyword=$stateParams.keyword;
-      // console.log($scope.keyword);
-      //  var url = "http://beta.appystore.in/appy_app/appyApi_handler.php?method=search&keyword=Drawing&content_type=appsgames&limit=5&offset=0&age=1&incl_age=6";
-      //  SearchService.getData(url).then(function(data){
-      //    console.log(data);
-      //    $scope.result = data.data.Responsedetails[0].data_array;
-      //    console.log($scope.result);
-      //  })
   });

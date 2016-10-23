@@ -4,20 +4,18 @@
 *@Date:
 *@Purpose:To Displaying the searchImages
  -->
-    <div>
     <div class="container2">
       <div class="outerbox">
         <div class="row">
             <div class="span5" style="display: inline-block " ng-repeat="x in result1" class='img-responsive'>
                 <div class="card card-1">
                   <img class="img" style='border-radius: 12%' ng-src='{{x.image_path}}' width="250" height="150" />
-                  <span class="icon videoIcon playS"></span>
+                  <!-- <span class="icon videoIcon playS"></span> -->
                   <p class="p1">{{x.title}}</p>
-              <span class="icon1 moreIcon"></span>
+              <!-- <span class="icon1 moreIcon"></span> -->
               <br>
               </div>
           </div>
         </div>
       </div>
     </div>
-</div>
