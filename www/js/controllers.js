@@ -72,8 +72,15 @@ angular.module('starter.controllers', [])
     });
   })
   /*contentCtrl is used displaying the contentList*/
-  .controller("contentCtrl", function($scope, $stateParams, $http, CategoryService, $ionicHistory,myCache) {
+  .controller("contentCtrl", function($scope, $stateParams, $http, CategoryService, $ionicHistory, myCache,$ionicLoading,$timeout) {
     console.log('contentController');
+    $ionicLoading.show({
+   content: 'Loading',
+   animation: 'fade-in',
+   showBackdrop: true,
+   maxWidth: 200,
+   showDelay: 0
+ });
     var pcatid = $stateParams.pid;
     var catid = $stateParams.cid;
     $scope.content_count = $stateParams.content_count;
@@ -87,17 +94,20 @@ angular.module('starter.controllers', [])
     var url = $stateParams.url;
     //  var cache=myCache.get('contentImages');
     if ($stateParams.caption) {
-        var cache = myCache.get($scope.caption);
-        }
-        if(cache){
-        $scope.result=cache;
-      }
-    else {
-    console.log("not cached");
-    /*contentList url*/
-    var url = 'http://beta.appystore.in/appy_app/appyApi_handler.php?method=getContentList&content_type=videos&limit=' + count + '&offset=0&catid=' + catid + '&pcatid=' + pcatid + '&age=1.5&incl_age=5';
-    $scope.url = url;
-    console.log(url);
+      var cache = myCache.get($scope.caption);
+    }
+    if (cache) {
+      $scope.result = cache;
+    } else {
+      console.log("not cached");
+      /*contentList url*/
+      var url = 'http://beta.appystore.in/appy_app/appyApi_handler.php?method=getContentList&content_type=videos&limit=' + count + '&offset=0&catid=' + catid + '&pcatid=' + pcatid + '&age=1.5&incl_age=5';
+      $scope.url = url;
+      console.log(url);
+      $timeout(function () {
+      $ionicLoading.hide();
+      $scope.stooges = [{name: 'Moe'}, {name: 'Larry'}, {name: 'Curly'}];
+    },500);
       /*Calling restApi for Retriving Data  */
       $http.get(url, {
           headers: {
@@ -124,24 +134,31 @@ angular.module('starter.controllers', [])
           myCache.put($scope.caption, $scope.result);
           console.log($scope.result);
         })
-}
+    }
     $scope.myGoBack = function() {
       console.log("back function called");
       $ionicHistory.goBack();
     };
 
-   $scope.$watch("result", function(newResult, oldResult) {
-   console.log("slidesChanged");
-   console.log(newResult);
-    //  myCache.put($scope.caption, newResult);
-   $scope.result=myCache.get($scope.caption);
-      });
-  })
+    $scope.$watch("result", function(newResult, oldResult) {
+      console.log("slidesChanged");
+      console.log(newResult);
+      //  myCache.put($scope.caption, newResult);
+      $scope.result = myCache.get($scope.caption);
+    });
 
-  /*videoCtrl is used to displaying videos*/
-  .controller("videoCtrl", function($scope, $stateParams, $http, $sce, CategoryService, $ionicHistory) {
+    })
+/*videoCtrl is used to displaying videos*/
+.controller("videoCtrl", function($scope, $stateParams, $http, $sce, CategoryService, $ionicHistory,$ionicLoading,$timeout) {
     // $scope.load=true;
     console.log('videoController');
+    $ionicLoading.show({
+   content: 'Loading',
+   animation: 'fade-in',
+   showBackdrop: true,
+   maxWidth: 200,
+   showDelay: 0
+ });
     $scope.content_count = $stateParams.content_count;
     console.log($scope.content_count);
     var count = $scope.content_count;
@@ -154,6 +171,10 @@ angular.module('starter.controllers', [])
     $scope.url = url;
     console.log("hi");
     console.log(url);
+    $timeout(function () {
+    $ionicLoading.hide();
+    $scope.stooges = [{name: 'Moe'}, {name: 'Larry'}, {name: 'Curly'}];
+  }, 1000);
     $scope.myGoBack1 = function() {
       console.log("back function called");
       $ionicHistory.goBack();
@@ -211,23 +232,73 @@ angular.module('starter.controllers', [])
 
       });
   })
-  .controller("SearchCtrl",function($scope,SearchService,$stateParams,$ionicHistory){
+  .controller("SearchCtrl", function($window,$scope, SearchService, $stateParams, $ionicHistory, $state,$timeout,$ionicLoading) {
     console.log("SearchCtrl");
-    $scope.value = "SEarch";
-    $scope.ChangeKeyword=function(name){
-      console.log(name);
-      $scope.textbox=name;
-      console.log($scope.textbox);
-    var url = "http://beta.appystore.in/appy_app/appyApi_handler.php?method=search&keyword="+name+"&content_type=appsgames&limit=5&offset=0&age=1&incl_age=6";
-  console.log(url);
-     SearchService.getData(url).then(function(data){
-       console.log(data);
-  $scope.result=data.data.Responsedetails[0].data_array;
-  console.log($scope.result);
-})
-};
-$scope.myGoBack = function() {
-  console.log("fc");
-  $ionicHistory.goBack();
-};
-  })
+    $scope.ChangeKeyword = function(name) {
+        if (!name) {
+          alert("please type any text in the searchbar");
+        } else {
+          console.log(name);
+          $scope.textbox = name;
+          $scope.count = $stateParams.total_count;
+          console.log($scope.count);
+          console.log($scope.textbox);
+          var url = "http://beta.appystore.in/appy_app/appyApi_handler.php?method=search&keyword=" + name + "&content_type=appsgames&limit=4&offset=0&age=1&incl_age=6";
+          console.log(url);
+          $ionicLoading.show({
+          content: 'Loading',
+          animation: 'fade-in',
+          showBackdrop: true,
+          maxWidth: 200,
+          showDelay: 0
+          });
+          SearchService.getData(url).then(function(data) {
+            console.log(data);
+            // $scope.result = data.data.Responsedetails[0].data_array;
+            $scope.count = data.data.Responsedetails[0].total_count;
+            console.log($scope.count);
+            var count=$scope.count;
+            console.log(count);
+          var url = "http://beta.appystore.in/appy_app/appyApi_handler.php?method=search&keyword=" + name + "&content_type=appsgames&limit="+count+"&offset=0&age=1&incl_age=6";
+          console.log(url);
+          SearchService.getData(url).then(function(data) {
+            $timeout(function () {
+            $ionicLoading.hide();
+            $scope.stooges = [{name: 'Moe'}, {name: 'Larry'}, {name: 'Curly'}];
+          }, 500);
+            console.log(data);
+            $scope.result1 = data.data.Responsedetails[0].data_array;
+            console.log($scope.result1);
+
+          })
+
+          })
+          if ($scope.textbox) {
+            console.log($scope.textbox);
+            var textbox = $scope.textbox;
+            console.log(textbox);
+            $state.go('.searchImages');
+          }
+          // var url="http://beta.appystore.in/appy_app/appyApi_handler.php?method=search&keyword="+textbox+"&content_type=appsgames&limit=5&offset=0&age=1&incl_age=6";
+          // console.log(url);
+          // SearchService.getData(url).then(function(data){
+          //   console.log("welcome");
+          //   console.log(data);
+          // })
+        };
+        $scope.myGoBack = function() {
+          console.log("fc");
+          // $ionicHistory.goBack();
+           $window.history.back();
+        };
+      }
+      //  $scope.Name="hello";
+      //  $scope.keyword=$stateParams.keyword;
+      // console.log($scope.keyword);
+      //  var url = "http://beta.appystore.in/appy_app/appyApi_handler.php?method=search&keyword=Drawing&content_type=appsgames&limit=5&offset=0&age=1&incl_age=6";
+      //  SearchService.getData(url).then(function(data){
+      //    console.log(data);
+      //    $scope.result = data.data.Responsedetails[0].data_array;
+      //    console.log($scope.result);
+      //  })
+  });
