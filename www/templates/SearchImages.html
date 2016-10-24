@@ -1,0 +1,19 @@
+<!--
+*@FileName:searchImages.html
+*@CreatedBy:Habeeb
+*@Date:
+*@Purpose:To Displaying the searchImages
+ -->
+<div class="container2">
+  <div class="outerbox">
+    <div class="row">
+      <div class="span5" style="display: inline-block " ng-repeat="x in result1" class='img-responsive'>
+        <div class="card card-1 item-text-wrap">
+          <img class="img" style='border-radius: 12%' ng-src='{{x.image_path}}' width="250" height="150" />
+          <p style="width:11em;">{{x.title}}</p>
+          <br>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

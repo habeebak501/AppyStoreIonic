@@ -1,0 +1,43 @@
+<!--
+*@FileName:Search.html
+*@CreatedBy:Habeeb
+*@Date:
+*@Purpose:To Search the ContentImages
+ -->
+ <ion view class="search">
+<ion-content>
+  <img ng-click='ChangeKeyword(textbox)' class="float_right" ng-src='images/Button_6_search-min.png' height=50 width=50/>
+  <img ng-click="myGoBack()" ng-src="images/Button_14_back-min.png" height="50" weight="50">
+  <input class="img-responsive" type=text ng-model='textbox' name="search" placeholder="Enter your text here..." ng-model="name">
+  <div ui-view>
+    <p class="p3">popular searches</p>
+    <p></p>
+    <br>
+    <ul>
+      <ion-scroll direction="x">
+        <button id="rcorners1" ng-click="ChangeKeyword('Rhymes')">
+          <p class="btn3">Rhymes</p>
+        </button>
+        <button id="rcorners1" ng-click="ChangeKeyword('Drawing')">
+          <p class="btn3">Drawing</p>
+        </button>
+        <button id="rcorners1" ng-click="ChangeKeyword('Counting')">
+          <p class="btn3">Counting</p>
+        </button>
+        <button id="rcorners1" ng-click="ChangeKeyword('Numbers')">
+          <p class="btn3">Numbers</p>
+        </button>
+        <button id="rcorners1" ng-click="ChangeKeyword('Colors')">
+          <p class="btn3">Colors</p>
+        </button>
+        <button id="rcorners1" ng-click="ChangeKeyword('Stories')">
+          <p class="btn3">Stories</p>
+        </button>
+        <button id="rcorners1" ng-click="ChangeKeyword('Maths')">
+          <p class="btn3">Maths</p>
+        </button>
+      </ion-scroll>
+    </ul>
+  </div>
+</ion-content>
+</ion view>
