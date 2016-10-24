@@ -40,7 +40,7 @@
   height: 270px;
 }
 .background, .background .pane, .background .item-complex .item-content {
-  background-image: url('../BG-min.png');
+  background-image: url('../images/BG-min.png');
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -77,7 +77,7 @@
   box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
 }
 .icon {
-  background-image: url('Button_29_play_icon_white-min.png');
+  background-image: url('images/Button_29_play_icon_white-min.png');
   background-repeat: no-repeat;
 }
 .img {
@@ -120,7 +120,7 @@ div.outerbox [class*="span"] {
   /* Very important */
 }
 .icon1 {
-  background-image: url('Button_27_more-min1.png');
+  background-image: url('images/Button_27_more-min1.png');
   background-repeat: no-repeat;
 }
 .img {
@@ -362,7 +362,7 @@ input[type=text] {
     height: 140px;
   }
   .icon {
-    background-image: url('Button_29_play_icon_white-min.png');
+    background-image: url('images/Button_29_play_icon_white-min.png');
     background-repeat: no-repeat;
   }
   .videoIcon {
@@ -385,7 +385,7 @@ input[type=text] {
     bottom: 0;
   }
   .icon1 {
-    background-image: url('Button_27_more-min2.png');
+    background-image: url('images/Button_27_more-min2.png');
     background-repeat: no-repeat;
   }
   .container5 {
@@ -475,7 +475,7 @@ input[type=text] {
     height: 140px;
   }
   .icon {
-    background-image: url('Button_29_play_icon_white-min.png');
+    background-image: url('images/Button_29_play_icon_white-min.png');
     background-repeat: no-repeat;
   }
   .videoIcon {
@@ -498,7 +498,7 @@ input[type=text] {
     bottom: 0;
   }
   .icon1 {
-    background-image: url('Button_27_more-min2.png');
+    background-image: url('images/Button_27_more-min2.png');
     background-repeat: no-repeat;
   }
   .img-rounded {
@@ -579,7 +579,7 @@ input[type=text] {
     height: 140px;
   }
   .icon {
-    background-image: url('Button_29_play_icon_white-min.png');
+    background-image: url('images/Button_29_play_icon_white-min.png');
     background-repeat: no-repeat;
   }
   .videoIcon {
@@ -602,7 +602,7 @@ input[type=text] {
     bottom: 0;
   }
   .icon1 {
-    background-image: url('Button_27_more-min2.png');
+    background-image: url('images/Button_27_more-min2.png');
     background-repeat: no-repeat;
   }
   .img-rounded {
@@ -675,7 +675,7 @@ input[type=text] {
     height: 140px;
   }
   .icon {
-    background-image: url('Button_29_play_icon_white-min.png');
+    background-image: url('images/Button_29_play_icon_white-min.png');
     background-repeat: no-repeat;
   }
   .videoIcon {
@@ -698,7 +698,7 @@ input[type=text] {
     bottom: 0;
   }
   .icon1 {
-    background-image: url('Button_27_more-min2.png');
+    background-image: url('images/Button_27_more-min2.png');
     background-repeat: no-repeat;
   }
   .card1 {
@@ -753,7 +753,7 @@ input[type=text] {
     height: 140px;
   }
   .icon {
-    background-image: url('Button_29_play_icon_white-min.png');
+    background-image: url('images/Button_29_play_icon_white-min.png');
     background-repeat: no-repeat;
   }
   .videoIcon {
@@ -776,7 +776,7 @@ input[type=text] {
     bottom: 0;
   }
   .icon1 {
-    background-image: url('Button_27_more-min2.png');
+    background-image: url('images/Button_27_more-min2.png');
     background-repeat: no-repeat;
   }
 }
@@ -808,7 +808,7 @@ input[type=text] {
     text-align: center;
   }
   .container4 {
-    top: 180px;
+    top: 160px;
     position: absolute;
     width: 100%;
     text-align: center;
@@ -834,7 +834,7 @@ input[type=text] {
     height: 140px;
   }
   .icon {
-    background-image: url('Button_29_play_icon_white-min.png');
+    background-image: url('images/Button_29_play_icon_white-min.png');
     background-repeat: no-repeat;
   }
   .videoIcon {
@@ -857,7 +857,7 @@ input[type=text] {
     bottom: 0;
   }
   .icon1 {
-    background-image: url('Button_27_more-min2.png');
+    background-image: url('images/Button_27_more-min2.png');
     background-repeat: no-repeat;
   }
   .video1 {
@@ -935,7 +935,7 @@ input[type=text] {
     height: 140px;
   }
   .icon {
-    background-image: url('Button_29_play_icon_white-min.png');
+    background-image: url('images/Button_29_play_icon_white-min.png');
     background-repeat: no-repeat;
   }
   .videoIcon {
@@ -965,7 +965,7 @@ input[type=text] {
     bottom: 0;
   }
   .icon1 {
-    background-image: url('Button_27_more-min2.png');
+    background-image: url('images/Button_27_more-min2.png');
     background-repeat: no-repeat;
   }
   .card1 {
@@ -1098,7 +1098,7 @@ input[type=text] {
     height: 140px;
   }
   .icon {
-    background-image: url('Button_29_play_icon_white-min.png');
+    background-image: url('images/Button_29_play_icon_white-min.png');
     background-repeat: no-repeat;
   }
   .videoIcon {
@@ -1121,7 +1121,7 @@ input[type=text] {
     bottom: 0;
   }
   .icon1 {
-    background-image: url('Button_27_more-min2.png');
+    background-image: url('images/Button_27_more-min2.png');
     background-repeat: no-repeat;
   }
   .card1 {
@@ -1257,7 +1257,7 @@ input[type=text] {
     display: inline-block;
   }
   .icon {
-    background-image: url('Button_29_play_icon_white-min.png');
+    background-image: url('images/Button_29_play_icon_white-min.png');
     background-repeat: no-repeat;
   }
   .videoIcon {
@@ -1280,7 +1280,7 @@ input[type=text] {
     bottom: 0;
   }
   .icon1 {
-    background-image: url('Button_27_more-min2.png');
+    background-image: url('images/Button_27_more-min2.png');
     background-repeat: no-repeat;
   }
   .card1 {
@@ -1394,7 +1394,7 @@ input[type=text] {
     height: 140px;
   }
   .icon {
-    background-image: url('Button_29_play_icon_white-min.png');
+    background-image: url('images/Button_29_play_icon_white-min.png');
     background-repeat: no-repeat;
   }
   .videoIcon {
@@ -1417,7 +1417,7 @@ input[type=text] {
     bottom: 0;
   }
   .icon1 {
-    background-image: url('Button_27_more-min2.png');
+    background-image: url('images/Button_27_more-min2.png');
     background-repeat: no-repeat;
   }
   .video1 {
@@ -1554,7 +1554,7 @@ input[type=text] {
     height: 140px;
   }
   .icon {
-    background-image: url('Button_29_play_icon_white-min.png');
+    background-image: url('images/Button_29_play_icon_white-min.png');
     background-repeat: no-repeat;
   }
   .videoIcon {
@@ -1577,7 +1577,7 @@ input[type=text] {
     bottom: 0;
   }
   .icon1 {
-    background-image: url('Button_27_more-min2.png');
+    background-image: url('images/Button_27_more-min2.png');
     background-repeat: no-repeat;
   }
   .card1 {

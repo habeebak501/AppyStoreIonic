@@ -5,7 +5,7 @@
  *Purpose:To Create Services Using Ionic Framework
  */
 /*create Service to the appyStore Module*/
-angular.module('starter.services', [])
+angular.module('AppyStore.services', [])
   /*Creating the CategoryService for calling the RestApi and returning the promise*/
   .factory('CategoryService', function($http) {
     var data = [];

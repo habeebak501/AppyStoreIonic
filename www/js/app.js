@@ -5,7 +5,7 @@
  *@Purpose:Routing for Ionic Application
  */
 /*Include all Dependencies*/
-angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', 'angular-carousel-3d', 'ionicImgCache'])
+angular.module('AppyStore', ['ionic', 'AppyStore.controllers', 'AppyStore.services', 'angular-carousel-3d', 'ionicImgCache'])
   .run(function($ionicPlatform) {
     $ionicPlatform.ready(function() {
       // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
@@ -23,32 +23,32 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
   /*config method is used to routing different states*/
   .config(function($stateProvider, $urlRouterProvider) {
     $stateProvider
-      .state('category', {
-        url: '/category',
-        templateUrl: 'templates/category.html',
-        controller: 'categoryCtrl'
+      .state('Category', {
+        url: '/Category',
+        templateUrl: 'templates/Category.html',
+        controller: 'CategoryCtrl'
       })
-      .state('content', {
-        url: '/content/?pid?cid?content_count?caption',
-        templateUrl: 'templates/content.html',
-        controller: 'contentCtrl'
+      .state('Content', {
+        url: '/Content/?pid?cid?content_count?caption',
+        templateUrl: 'templates/Content.html',
+        controller: 'ContentCtrl'
       })
-      .state('video', {
-        url: '/video/?url?pid?cid?content_count',
-        templateUrl: 'templates/video.html',
-        controller: 'videoCtrl'
+      .state('Video', {
+        url: '/Video/?url?pid?cid?content_count',
+        templateUrl: 'templates/Video.html',
+        controller: 'VideoCtrl'
       })
-      .state('search',{
-        url:'/search',
-        templateUrl:'templates/search.html',
+      .state('Search',{
+        url:'/Search',
+        templateUrl:'templates/Search.html',
         controller:'SearchCtrl'
       })
-      .state('search.searchImages',{
-        url:'/searchImages',
-        templateUrl:'templates/searchImages.html',
+      .state('Search.SearchImages',{
+        url:'/SearchImages',
+        templateUrl:'templates/SearchImages.html',
          controller:'SearchCtrl'
       });
 
     // if none of the above states are matched, use this as the fallback
-    $urlRouterProvider.otherwise('/category');
+    $urlRouterProvider.otherwise('/Category');
   });
