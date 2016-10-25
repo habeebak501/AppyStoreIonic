@@ -9,6 +9,8 @@ angular.module('AppyStore.controllers', [])
   /*Display the CategoryImages using controller*/
   .controller('CategoryCtrl', function($scope, CategoryService, myCache) {
     console.log("CategoryController");
+    $scope.loading=true;
+    console.log($scope.loading);
     var array = [];
     $scope.images = [{
       'src': "loading.gif",
@@ -42,6 +44,8 @@ angular.module('AppyStore.controllers', [])
       /*Retriving data from CategoryService using promise*/
       var promise = CategoryService.result();
       promise.then(function(data) {
+        $scope.loading=false;
+        console.log($scope.loading);
         $scope.images = [];
         $scope.res = [];
         var result = data.data.Responsedetails.category_id_array;
@@ -72,15 +76,15 @@ angular.module('AppyStore.controllers', [])
     });
   })
   /*contentCtrl is used displaying the contentList*/
-  .controller("ContentCtrl", function($scope, $stateParams, $http, CategoryService, $ionicHistory, myCache, $ionicLoading, $timeout) {
+  .controller("ContentCtrl", function($scope, $stateParams, $http, CategoryService, $ionicHistory, myCache) {
     console.log('ContentController');
-    $ionicLoading.show({
-      content: 'Loading',
-      animation: 'fade-in',
-      showBackdrop: true,
-      maxWidth: 200,
-      showDelay: 0
-    });
+    // $ionicLoading.show({
+    //   content: 'Loading',
+    //   animation: 'fade-in',
+    //   showBackdrop: true,
+    //   maxWidth: 200,
+    //   showDelay: 0
+    // });
     var pcatid = $stateParams.pid;
     var catid = $stateParams.cid;
     $scope.content_count = $stateParams.content_count;
@@ -100,20 +104,22 @@ angular.module('AppyStore.controllers', [])
       $scope.result = cache;
     } else {
       console.log("not cached");
+      $scope.loading = true;
+     console.log($scope.loading);
       /*contentList url*/
       var url = 'http://beta.appystore.in/appy_app/appyApi_handler.php?method=getContentList&content_type=videos&limit=' + count + '&offset=0&catid=' + catid + '&pcatid=' + pcatid + '&age=1.5&incl_age=5';
       $scope.url = url;
       console.log(url);
-      $timeout(function() {
-        $ionicLoading.hide();
-        $scope.stooges = [{
-          name: 'Moe'
-        }, {
-          name: 'Larry'
-        }, {
-          name: 'Curly'
-        }];
-      }, 2000);
+      // $timeout(function() {
+      //   $ionicLoading.hide();
+      //   $scope.stooges = [{
+      //     name: 'Moe'
+      //   }, {
+      //     name: 'Larry'
+      //   }, {
+      //     name: 'Curly'
+      //   }];
+      // }, 2000);
       /*Calling restApi for Retriving Data  */
       $http.get(url, {
           headers: {
@@ -135,6 +141,8 @@ angular.module('AppyStore.controllers', [])
           }
         })
         .then(function(response) {
+          $scope.loading=false;
+           console.log($scope.loading);
           console.log(response);
           $scope.result = response.data.Responsedetails.data_array;
           myCache.put($scope.caption, $scope.result);
@@ -153,16 +161,9 @@ angular.module('AppyStore.controllers', [])
     });
   })
   /*videoCtrl is used to displaying videos*/
-  .controller("VideoCtrl", function($scope, $stateParams, $http, $sce, CategoryService, $ionicHistory, $ionicLoading, $timeout) {
+  .controller("VideoCtrl", function($scope, $stateParams, $http, $sce, CategoryService, $ionicHistory) {
     // $scope.load=true;
     console.log('VideoController');
-    $ionicLoading.show({
-      content: 'Loading',
-      animation: 'fade-in',
-      showBackdrop: true,
-      maxWidth: 200,
-      showDelay: 0
-    });
     $scope.content_count = $stateParams.content_count;
     console.log($scope.content_count);
     var count = $scope.content_count;
@@ -175,16 +176,6 @@ angular.module('AppyStore.controllers', [])
     $scope.url = url;
     console.log("hi");
     console.log(url);
-    $timeout(function() {
-      $ionicLoading.hide();
-      $scope.stooges = [{
-        name: 'Moe'
-      }, {
-        name: 'Larry'
-      }, {
-        name: 'Curly'
-      }];
-    }, 1000);
     $scope.myGoBack1 = function() {
       console.log("back function called");
       $ionicHistory.goBack();
@@ -206,6 +197,8 @@ angular.module('AppyStore.controllers', [])
     $scope.pcatid = pcatid;
     $scope.catid = catid;
     console.log(pcatid, catid);
+    $scope.loading=true;
+     console.log($scope.loading);
     /*contentList url using to retrive videos data*/
     var url = 'http://beta.appystore.in/appy_app/appyApi_handler.php?method=getContentList&content_type=videos&limit=' + count + '&offset=0&catid=' + catid + '&pcatid=' + pcatid + '&age=1.5&incl_age=5';
     $http.get(url, {
@@ -228,15 +221,18 @@ angular.module('AppyStore.controllers', [])
         }
       })
       .then(function(response) {
+        $scope.loading=false;
+         console.log($scope.loading);
         $scope.result = response.data.Responsedetails.data_array;
         console.log($scope.result);
 
       });
   })
   /*SearchCtrl is used to Search the pirticular content images using categoryList*/
-  .controller("SearchCtrl", function($window, $scope, SearchService, $stateParams, $ionicHistory, $state, $timeout, $ionicLoading) {
+  .controller("SearchCtrl", function($window, $scope, SearchService, $stateParams, $ionicHistory, $state) {
     console.log("SearchCtrl");
     $scope.ChangeKeyword = function(name) {
+      $scope.result1="";
       if (!name) {
         alert("Please Type Any Text in the SearchBar");
       } else {
@@ -245,15 +241,10 @@ angular.module('AppyStore.controllers', [])
         $scope.count = $stateParams.total_count;
         console.log($scope.count);
         console.log($scope.textbox);
+        $scope.loading=true;
+        console.log($scope.loading);
         var url = "http://beta.appystore.in/appy_app/appyApi_handler.php?method=search&keyword=" + name + "&content_type=appsgames&limit=4&offset=0&age=1&incl_age=6";
         console.log(url);
-        $ionicLoading.show({
-          content: 'Loading',
-          animation: 'fade-in',
-          showBackdrop: true,
-          maxWidth: 200,
-          showDelay: 0
-        });
         /*Retriving Data From SearchServices using promisee
          */
         SearchService.getData(url).then(function(data) {
@@ -267,16 +258,8 @@ angular.module('AppyStore.controllers', [])
           var url = "http://beta.appystore.in/appy_app/appyApi_handler.php?method=search&keyword=" + name + "&content_type=appsgames&limit=" + count + "&offset=0&age=1&incl_age=6";
           console.log(url);
           SearchService.getData(url).then(function(data) {
-            $timeout(function() {
-              $ionicLoading.hide();
-              $scope.stooges = [{
-                name: 'Moe'
-              }, {
-                name: 'Larry'
-              }, {
-                name: 'Curly'
-              }];
-            }, 500);
+            $scope.loading=false;
+            console.log($scope.loading);
             console.log(data);
             $scope.result1 = data.data.Responsedetails[0].data_array;
             console.log($scope.result1);

@@ -14,6 +14,7 @@
 
     <!-- Displaying the Carousel 3d view -->
     <div class="container1">
+      <center>  <ion-spinner class="a4"icon="android" ng-show="loading"></ion-spinner></center>
       <div carousel3d ng-model="images" options="options">
         <!-- ng-repeat is like for loop -->
         <div class="img-responsive" carousel3d-slide ng-repeat="x in images">

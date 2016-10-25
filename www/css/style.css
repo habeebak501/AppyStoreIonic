@@ -77,7 +77,7 @@
   box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
 }
 .icon {
-  background-image: url('images/Button_29_play_icon_white-min.png');
+  background-image: url('/images/Button_29_play_icon_white-min.png');
   background-repeat: no-repeat;
 }
 .img {
@@ -362,7 +362,7 @@ input[type=text] {
     height: 140px;
   }
   .icon {
-    background-image: url('images/Button_29_play_icon_white-min.png');
+    background-image: url('/images/Button_29_play_icon_white-min.png');
     background-repeat: no-repeat;
   }
   .videoIcon {
@@ -475,7 +475,7 @@ input[type=text] {
     height: 140px;
   }
   .icon {
-    background-image: url('images/Button_29_play_icon_white-min.png');
+    background-image: url('/images/Button_29_play_icon_white-min.png');
     background-repeat: no-repeat;
   }
   .videoIcon {
@@ -579,7 +579,7 @@ input[type=text] {
     height: 140px;
   }
   .icon {
-    background-image: url('images/Button_29_play_icon_white-min.png');
+    background-image: url('/images/Button_29_play_icon_white-min.png');
     background-repeat: no-repeat;
   }
   .videoIcon {
@@ -675,7 +675,7 @@ input[type=text] {
     height: 140px;
   }
   .icon {
-    background-image: url('images/Button_29_play_icon_white-min.png');
+    background-image: url('/images/Button_29_play_icon_white-min.png');
     background-repeat: no-repeat;
   }
   .videoIcon {
@@ -753,7 +753,7 @@ input[type=text] {
     height: 140px;
   }
   .icon {
-    background-image: url('images/Button_29_play_icon_white-min.png');
+    background-image: url('/images/Button_29_play_icon_white-min.png');
     background-repeat: no-repeat;
   }
   .videoIcon {
@@ -801,6 +801,10 @@ input[type=text] {
     width: 100%;
     text-align: center;
   }
+  .a4{
+    position: relative;
+    top:80px;
+  }
   .container2 {
     top: 80px;
     position: absolute;
@@ -834,12 +838,12 @@ input[type=text] {
     height: 140px;
   }
   .icon {
-    background-image: url('images/Button_29_play_icon_white-min.png');
+    background-image: url('/images/Button_29_play_icon_white-min1.png');
     background-repeat: no-repeat;
   }
   .videoIcon {
-    top: 101px;
-    left: 5px;
+    top: 110px;
+    left: 10px;
     height: 48px;
     width: 88px;
     display: inline-block;
@@ -892,6 +896,16 @@ input[type=text] {
     width: 380px;
     display: inline-block;
   }
+  .a1{
+    position:relative;
+    width:100%;
+    top:80px;
+  }
+  .a2{
+    position:relative;
+    width:100%;
+    top:50px;
+  }
 }
 @media only screen and (max-width: 568px) {
   .float_left1 {
@@ -935,7 +949,7 @@ input[type=text] {
     height: 140px;
   }
   .icon {
-    background-image: url('images/Button_29_play_icon_white-min.png');
+    background-image: url('/images/Button_29_play_icon_white-min.png');
     background-repeat: no-repeat;
   }
   .videoIcon {
@@ -1098,7 +1112,7 @@ input[type=text] {
     height: 140px;
   }
   .icon {
-    background-image: url('images/Button_29_play_icon_white-min.png');
+    background-image: url('/images/Button_29_play_icon_white-min.png');
     background-repeat: no-repeat;
   }
   .videoIcon {
@@ -1257,7 +1271,7 @@ input[type=text] {
     display: inline-block;
   }
   .icon {
-    background-image: url('images/Button_29_play_icon_white-min.png');
+    background-image: url('/images/Button_29_play_icon_white-min.png');
     background-repeat: no-repeat;
   }
   .videoIcon {
@@ -1394,7 +1408,7 @@ input[type=text] {
     height: 140px;
   }
   .icon {
-    background-image: url('images/Button_29_play_icon_white-min.png');
+    background-image: url('/images/Button_29_play_icon_white-min.png');
     background-repeat: no-repeat;
   }
   .videoIcon {
@@ -1554,7 +1568,7 @@ input[type=text] {
     height: 140px;
   }
   .icon {
-    background-image: url('images/Button_29_play_icon_white-min.png');
+    background-image: url('/images/Button_29_play_icon_white-min.png');
     background-repeat: no-repeat;
   }
   .videoIcon {
