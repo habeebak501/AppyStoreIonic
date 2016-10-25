@@ -801,10 +801,12 @@ input[type=text] {
     width: 100%;
     text-align: center;
   }
+
   .a4{
     position: relative;
     top:80px;
   }
+
   .container2 {
     top: 80px;
     position: absolute;
@@ -838,12 +840,19 @@ input[type=text] {
     height: 140px;
   }
   .icon {
+
     background-image: url('/images/Button_29_play_icon_white-min1.png');
     background-repeat: no-repeat;
   }
   .videoIcon {
     top: 110px;
     left: 10px;
+    background-image: url('images/Button_29_play_icon_white-min.png');
+    background-repeat: no-repeat;
+  }
+  .videoIcon {
+    top: 101px;
+    left: 5px;
     height: 48px;
     width: 88px;
     display: inline-block;

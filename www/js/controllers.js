@@ -76,6 +76,7 @@ angular.module('AppyStore.controllers', [])
     });
   })
   /*contentCtrl is used displaying the contentList*/
+
   .controller("ContentCtrl", function($scope, $stateParams, $http, CategoryService, $ionicHistory, myCache) {
     console.log('ContentController');
     // $ionicLoading.show({
@@ -85,6 +86,7 @@ angular.module('AppyStore.controllers', [])
     //   maxWidth: 200,
     //   showDelay: 0
     // });
+
     var pcatid = $stateParams.pid;
     var catid = $stateParams.cid;
     $scope.content_count = $stateParams.content_count;
@@ -106,20 +108,13 @@ angular.module('AppyStore.controllers', [])
       console.log("not cached");
       $scope.loading = true;
      console.log($scope.loading);
+
       /*contentList url*/
       var url = 'http://beta.appystore.in/appy_app/appyApi_handler.php?method=getContentList&content_type=videos&limit=' + count + '&offset=0&catid=' + catid + '&pcatid=' + pcatid + '&age=1.5&incl_age=5';
       $scope.url = url;
       console.log(url);
-      // $timeout(function() {
-      //   $ionicLoading.hide();
-      //   $scope.stooges = [{
-      //     name: 'Moe'
-      //   }, {
-      //     name: 'Larry'
-      //   }, {
-      //     name: 'Curly'
-      //   }];
-      // }, 2000);
+
+
       /*Calling restApi for Retriving Data  */
       $http.get(url, {
           headers: {
@@ -176,6 +171,7 @@ angular.module('AppyStore.controllers', [])
     $scope.url = url;
     console.log("hi");
     console.log(url);
+
     $scope.myGoBack1 = function() {
       console.log("back function called");
       $ionicHistory.goBack();
@@ -197,6 +193,7 @@ angular.module('AppyStore.controllers', [])
     $scope.pcatid = pcatid;
     $scope.catid = catid;
     console.log(pcatid, catid);
+
     $scope.loading=true;
      console.log($scope.loading);
     /*contentList url using to retrive videos data*/
@@ -245,7 +242,7 @@ angular.module('AppyStore.controllers', [])
         console.log($scope.loading);
         var url = "http://beta.appystore.in/appy_app/appyApi_handler.php?method=search&keyword=" + name + "&content_type=appsgames&limit=4&offset=0&age=1&incl_age=6";
         console.log(url);
-        /*Retriving Data From SearchServices using promisee
+            /*Retriving Data From SearchServices using promisee
          */
         SearchService.getData(url).then(function(data) {
           console.log(data);
@@ -258,6 +255,7 @@ angular.module('AppyStore.controllers', [])
           var url = "http://beta.appystore.in/appy_app/appyApi_handler.php?method=search&keyword=" + name + "&content_type=appsgames&limit=" + count + "&offset=0&age=1&incl_age=6";
           console.log(url);
           SearchService.getData(url).then(function(data) {
+
             $scope.loading=false;
             console.log($scope.loading);
             console.log(data);

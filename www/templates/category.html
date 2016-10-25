@@ -1,0 +1,34 @@
+<!--
+*@FileName:category.html
+*@CreatedBy:Habeeb
+*@Date:
+*@Purpose:To Displaying the categoryList
+ -->
+<ion-view class="category">
+  <!-- ng-include is used to include another html file -->
+  <ion-content>
+    <a ui-sref="search"><img class="float_right" ng-src='Button_6_search-min.png' height="50" width="50"></a>
+    <div ng-include="'templates/header.html'"></div>
+
+    <div ng-include="'templates/footer.html'"></div>
+
+    <!-- Displaying the Carousel 3d view -->
+    <div class="container1">
+      <div carousel3d ng-model="images" options="options">
+        <!-- ng-repeat is like for loop -->
+        <div class="img-responsive" carousel3d-slide ng-repeat="x in images">
+          <figure>
+            <img ng-if="carousel3d.getCurrentIndex() === $index" ng-src='{{(x.src)}}' ui-sref='content({pid:x.pid,cid:x.cid,content_count:x.content_count,caption:x.caption})' alt="" />
+            <img ng-if="carousel3d.getCurrentIndex() !== $index" ng-src="{{x.src}}" />
+            </a>
+            <!-- <a ng-if = "carousel3d.getCurrentIndex() === $index"
+             ui-sref="content({pid:x.pid,cid:x.cid,content_count:x.content_count,caption:x.caption})">
+             <ui-image data-src="{{x.src}}" alt="" ></ui-image></a>
+             <ui-image ng-if="carousel3d.getCurrentIndex() !== $index" data-src="{{x.src}}" alt="" ></ui-image> -->
+            <figcaption><span style="color:white;font-weight:bold">{{x.caption}}</span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>
