@@ -12,12 +12,14 @@
     <center>
       <p style="color:white;font-family:verdana;font-size:30px;">{{caption}}</p>
     </center>
-    <div class="container2">
+    <ion-scroll direction="x" style="position:fixed:top:50px;overflow-y: hidden;">
+    <!--<div class="container2">-->
       <center>  <ion-spinner class="a1"icon="android" ng-show="loading"></ion-spinner></center>
       <div class="outerbox">
-        <div class="row">
+        <!--<div>-->
+        <!--<div class="row">-->
           <center>
-            <div class="span5" style="display: inline-block " ng-repeat="x in result" class='img-responsive'>
+            <div  style="display: inline-block " ng-repeat="x in result" class='img-responsive'>
             <a ui-sref='Video({url:x.dnld_url,pid:pcatid,cid:catid,content_count:content_count})'>
               <div class="card card-1 item-text-wrap">
               <a ui-sref='Video({url:x.dnld_url,pid:pcatid,cid:catid,content_count:content_count})'>
@@ -31,9 +33,9 @@
               <br>
               </div>
           </center>
-          </div>
+          <!--</div>-->
         </div>
-      </div>
-    </div>
+      </ion-scroll>
+    <!--</div>-->
   </ion-content>
 </ion-view>

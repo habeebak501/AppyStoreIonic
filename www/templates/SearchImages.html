@@ -6,8 +6,9 @@
  -->
 <div class="container2">
   <center>  <ion-spinner class="a3"icon="android" ng-show="loading"></ion-spinner></center>
+   <ion-scroll direction="x" style="position:fixed:top:50px;overflow-y: hidden;">
   <div class="outerbox">
-    <div class="row">
+    <!--<div class="row">-->
       <div class="span5" style="display: inline-block " ng-repeat="x in result1" class='img-responsive'>
         <div class="card card-1 item-text-wrap">
           <img class="img" style='border-radius: 12%' ng-src='{{x.image_path}}' width="250" height="150" />
@@ -15,6 +16,7 @@
           <br>
         </div>
       </div>
-    </div>
+    <!--</div>-->
+    </ion-scroll>
   </div>
 </div>
